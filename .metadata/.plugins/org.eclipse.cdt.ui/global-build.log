@@ -1,0 +1,2459 @@
+01:01:43 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.o"
+arm-none-eabi-gcc "../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.d" -MT"Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.o"
+arm-none-eabi-gcc "../Core/Src/adc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/adc.d" -MT"Core/Src/adc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/adc.o"
+arm-none-eabi-gcc "../Core/Src/dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/dma.d" -MT"Core/Src/dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/dma.o"
+arm-none-eabi-gcc "../Core/Src/gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/gpio.d" -MT"Core/Src/gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/gpio.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32l4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32l4xx_hal_msp.d" -MT"Core/Src/stm32l4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32l4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32l4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32l4xx_it.d" -MT"Core/Src/stm32l4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32l4xx_it.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32l4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32l4xx.d" -MT"Core/Src/system_stm32l4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32l4xx.o"
+arm-none-eabi-gcc "../Core/Src/tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/tim.d" -MT"Core/Src/tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/tim.o"
+arm-none-eabi-gcc "../Core/Src/usart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/usart.d" -MT"Core/Src/usart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/usart.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:65:5: error: 'adc' undeclared (first use in this function); did you mean 'hadc1'?
+   65 |     adc[i] = buffer[i];
+      |     ^~~
+      |     hadc1
+../Core/Src/main.c:65:5: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:65:14: error: 'buffer' undeclared (first use in this function); did you mean 'setbuffer'?
+   65 |     adc[i] = buffer[i];
+      |              ^~~~~~
+      |              setbuffer
+../Core/Src/main.c:66:19: warning: passing argument 1 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+   66 | HAL_ADC_Start_DMA(&hadc1, buffer, 6);
+      |                   ^~~~~~
+      |                   |
+      |                   ADC_HandleTypeDef ** {aka struct <anonymous> **}
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:277,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h:1753:62: note: expected 'ADC_HandleTypeDef *' {aka 'struct <anonymous> *'} but argument is of type 'ADC_HandleTypeDef **' {aka 'struct <anonymous> **'}
+ 1753 | HAL_StatusTypeDef       HAL_ADC_Start_DMA(ADC_HandleTypeDef *hadc, uint32_t *pData, uint32_t Length);
+      |                                           ~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:118:60: warning: format '%d' expects argument of type 'int', but argument 3 has type 'char *' [-Wformat=]
+  118 |    uint8_t  len  =  sprintf((char*)string_buf, "variable: %d \n", variable);
+      |                                                           ~^      ~~~~~~~~
+      |                                                            |      |
+      |                                                            int    char *
+      |                                                           %s
+../Core/Src/main.c:83:12: warning: unused variable 'buffer' [-Wunused-variable]
+   83 |   uint32_t buffer[6];
+      |            ^~~~~~
+../Core/Src/main.c:82:21: warning: unused variable 'adc' [-Wunused-variable]
+   82 |   volatile uint32_t adc[6];
+      |                     ^~~
+../Core/Src/main.c:81:8: warning: unused variable 'msg' [-Wunused-variable]
+   81 |   char msg[10];
+      |        ^~~
+../Core/Src/main.c:80:12: warning: unused variable 'raw' [-Wunused-variable]
+   80 |   uint16_t raw;
+      |            ^~~
+make: *** [Core/Src/subdir.mk:49: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+01:03:27 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:68:19: warning: passing argument 1 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+   68 | HAL_ADC_Start_DMA(&hadc1, buffer, 6);
+      |                   ^~~~~~
+      |                   |
+      |                   ADC_HandleTypeDef ** {aka struct <anonymous> **}
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:277,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h:1753:62: note: expected 'ADC_HandleTypeDef *' {aka 'struct <anonymous> *'} but argument is of type 'ADC_HandleTypeDef **' {aka 'struct <anonymous> **'}
+ 1753 | HAL_StatusTypeDef       HAL_ADC_Start_DMA(ADC_HandleTypeDef *hadc, uint32_t *pData, uint32_t Length);
+      |                                           ~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:119:60: warning: format '%d' expects argument of type 'int', but argument 3 has type 'char *' [-Wformat=]
+  119 |    uint8_t  len  =  sprintf((char*)string_buf, "variable: %d \n", variable);
+      |                                                           ~^      ~~~~~~~~
+      |                                                            |      |
+      |                                                            int    char *
+      |                                                           %s
+../Core/Src/main.c:83:8: warning: unused variable 'msg' [-Wunused-variable]
+   83 |   char msg[10];
+      |        ^~~
+../Core/Src/main.c:82:12: warning: unused variable 'raw' [-Wunused-variable]
+   82 |   uint16_t raw;
+      |            ^~~
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  22792	    120	   1976	  24888	   6138	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+01:03:32 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-size   ArmuroLeer.elf 
+   text	   data	    bss	    dec	    hex	filename
+  22792	    120	   1976	  24888	   6138	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+01:06:01 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:68:19: warning: passing argument 1 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+   68 | HAL_ADC_Start_DMA(&hadc1, buffer, 6);
+      |                   ^~~~~~
+      |                   |
+      |                   ADC_HandleTypeDef ** {aka struct <anonymous> **}
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:277,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h:1753:62: note: expected 'ADC_HandleTypeDef *' {aka 'struct <anonymous> *'} but argument is of type 'ADC_HandleTypeDef **' {aka 'struct <anonymous> **'}
+ 1753 | HAL_StatusTypeDef       HAL_ADC_Start_DMA(ADC_HandleTypeDef *hadc, uint32_t *pData, uint32_t Length);
+      |                                           ~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:119:60: warning: format '%d' expects argument of type 'int', but argument 3 has type 'char *' [-Wformat=]
+  119 |    uint8_t  len  =  sprintf((char*)string_buf, "variable: %d \n", variable);
+      |                                                           ~^      ~~~~~~~~
+      |                                                            |      |
+      |                                                            int    char *
+      |                                                           %s
+../Core/Src/main.c:123:17: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t' {aka 'volatile long unsigned int'} [-Wformat=]
+  123 |        printf("%d ", adc[i]);
+      |                ~^    ~~~~~~
+      |                 |       |
+      |                 int     uint32_t {aka volatile long unsigned int}
+      |                %ld
+../Core/Src/main.c:83:8: warning: unused variable 'msg' [-Wunused-variable]
+   83 |   char msg[10];
+      |        ^~~
+../Core/Src/main.c:82:12: warning: unused variable 'raw' [-Wunused-variable]
+   82 |   uint16_t raw;
+      |            ^~~
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  25900	    120	   2024	  28044	   6d8c	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+01:10:28 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:68:19: warning: passing argument 1 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+   68 | HAL_ADC_Start_DMA(&hadc1, buffer, 6);
+      |                   ^~~~~~
+      |                   |
+      |                   ADC_HandleTypeDef ** {aka struct <anonymous> **}
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:277,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h:1753:62: note: expected 'ADC_HandleTypeDef *' {aka 'struct <anonymous> *'} but argument is of type 'ADC_HandleTypeDef **' {aka 'struct <anonymous> **'}
+ 1753 | HAL_StatusTypeDef       HAL_ADC_Start_DMA(ADC_HandleTypeDef *hadc, uint32_t *pData, uint32_t Length);
+      |                                           ~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:119:60: warning: format '%d' expects argument of type 'int', but argument 3 has type 'char *' [-Wformat=]
+  119 |    uint8_t  len  =  sprintf((char*)string_buf, "variable: %d \n", variable);
+      |                                                           ~^      ~~~~~~~~
+      |                                                            |      |
+      |                                                            int    char *
+      |                                                           %s
+../Core/Src/main.c:83:8: warning: unused variable 'msg' [-Wunused-variable]
+   83 |   char msg[10];
+      |        ^~~
+../Core/Src/main.c:82:12: warning: unused variable 'raw' [-Wunused-variable]
+   82 |   uint16_t raw;
+      |            ^~~
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  22792	    120	   1976	  24888	   6138	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+01:16:31 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:68:19: warning: passing argument 1 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+   68 | HAL_ADC_Start_DMA(&hadc1, buffer, 6);
+      |                   ^~~~~~
+      |                   |
+      |                   ADC_HandleTypeDef ** {aka struct <anonymous> **}
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:277,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h:1753:62: note: expected 'ADC_HandleTypeDef *' {aka 'struct <anonymous> *'} but argument is of type 'ADC_HandleTypeDef **' {aka 'struct <anonymous> **'}
+ 1753 | HAL_StatusTypeDef       HAL_ADC_Start_DMA(ADC_HandleTypeDef *hadc, uint32_t *pData, uint32_t Length);
+      |                                           ~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:120:13: error: assignment to expression with array type
+  120 |    variable = adc;
+      |             ^
+../Core/Src/main.c:121:60: warning: format '%d' expects argument of type 'int', but argument 3 has type 'int *' [-Wformat=]
+  121 |    uint8_t  len  =  sprintf((char*)string_buf, "variable: %d \n", variable);
+      |                                                           ~^      ~~~~~~~~
+      |                                                            |      |
+      |                                                            int    int *
+      |                                                           %ls
+../Core/Src/main.c:83:8: warning: unused variable 'msg' [-Wunused-variable]
+   83 |   char msg[10];
+      |        ^~~
+../Core/Src/main.c:82:12: warning: unused variable 'raw' [-Wunused-variable]
+   82 |   uint16_t raw;
+      |            ^~~
+make: *** [Core/Src/subdir.mk:49: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+01:18:46 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:68:19: warning: passing argument 1 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+   68 | HAL_ADC_Start_DMA(&hadc1, buffer, 6);
+      |                   ^~~~~~
+      |                   |
+      |                   ADC_HandleTypeDef ** {aka struct <anonymous> **}
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:277,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h:1753:62: note: expected 'ADC_HandleTypeDef *' {aka 'struct <anonymous> *'} but argument is of type 'ADC_HandleTypeDef **' {aka 'struct <anonymous> **'}
+ 1753 | HAL_StatusTypeDef       HAL_ADC_Start_DMA(ADC_HandleTypeDef *hadc, uint32_t *pData, uint32_t Length);
+      |                                           ~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:120:13: warning: assignment to 'int *' from 'uint32_t' {aka 'volatile long unsigned int'} makes pointer from integer without a cast [-Wint-conversion]
+  120 |    variable = adc[0];
+      |             ^
+../Core/Src/main.c:121:60: warning: format '%d' expects argument of type 'int', but argument 3 has type 'int *' [-Wformat=]
+  121 |    uint8_t  len  =  sprintf((char*)string_buf, "variable: %d \n", variable);
+      |                                                           ~^      ~~~~~~~~
+      |                                                            |      |
+      |                                                            int    int *
+      |                                                           %ls
+../Core/Src/main.c:118:11: warning: unused variable 'n_adc' [-Wunused-variable]
+  118 |    size_t n_adc = sizeof(adc)/sizeof(adc[0]);
+      |           ^~~~~
+../Core/Src/main.c:83:8: warning: unused variable 'msg' [-Wunused-variable]
+   83 |   char msg[10];
+      |        ^~~
+../Core/Src/main.c:82:12: warning: unused variable 'raw' [-Wunused-variable]
+   82 |   uint16_t raw;
+      |            ^~~
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  22776	    120	   2024	  24920	   6158	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+01:18:50 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-size   ArmuroLeer.elf 
+   text	   data	    bss	    dec	    hex	filename
+  22776	    120	   2024	  24920	   6158	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+01:26:24 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:68:19: warning: passing argument 1 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+   68 | HAL_ADC_Start_DMA(&hadc1, buffer, 6);
+      |                   ^~~~~~
+      |                   |
+      |                   ADC_HandleTypeDef ** {aka struct <anonymous> **}
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:277,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h:1753:62: note: expected 'ADC_HandleTypeDef *' {aka 'struct <anonymous> *'} but argument is of type 'ADC_HandleTypeDef **' {aka 'struct <anonymous> **'}
+ 1753 | HAL_StatusTypeDef       HAL_ADC_Start_DMA(ADC_HandleTypeDef *hadc, uint32_t *pData, uint32_t Length);
+      |                                           ~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:117:36: error: 'string_buf' undeclared (first use in this function)
+  117 |    uint8_t  len  =  sprintf((char*)string_buf, "value %d: %d \n", variable, i);
+      |                                    ^~~~~~~~~~
+../Core/Src/main.c:117:36: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:117:77: error: 'i' undeclared (first use in this function)
+  117 |    uint8_t  len  =  sprintf((char*)string_buf, "value %d: %d \n", variable, i);
+      |                                                                             ^
+../Core/Src/main.c:121:11: warning: unused variable 'n_adc' [-Wunused-variable]
+  121 |    size_t n_adc = sizeof(adc)/sizeof(adc[0]);
+      |           ^~~~~
+../Core/Src/main.c:83:8: warning: unused variable 'msg' [-Wunused-variable]
+   83 |   char msg[10];
+      |        ^~~
+../Core/Src/main.c:82:12: warning: unused variable 'raw' [-Wunused-variable]
+   82 |   uint16_t raw;
+      |            ^~~
+make: *** [Core/Src/subdir.mk:49: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+01:27:25 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:68:19: warning: passing argument 1 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+   68 | HAL_ADC_Start_DMA(&hadc1, buffer, 6);
+      |                   ^~~~~~
+      |                   |
+      |                   ADC_HandleTypeDef ** {aka struct <anonymous> **}
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:277,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h:1753:62: note: expected 'ADC_HandleTypeDef *' {aka 'struct <anonymous> *'} but argument is of type 'ADC_HandleTypeDef **' {aka 'struct <anonymous> **'}
+ 1753 | HAL_StatusTypeDef       HAL_ADC_Start_DMA(ADC_HandleTypeDef *hadc, uint32_t *pData, uint32_t Length);
+      |                                           ~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:117:36: error: 'string_buf' undeclared (first use in this function)
+  117 |    uint8_t  len  =  sprintf((char*)string_buf, "value %d: %d \n", variable);
+      |                                    ^~~~~~~~~~
+../Core/Src/main.c:117:36: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:121:11: warning: unused variable 'n_adc' [-Wunused-variable]
+  121 |    size_t n_adc = sizeof(adc)/sizeof(adc[0]);
+      |           ^~~~~
+../Core/Src/main.c:83:8: warning: unused variable 'msg' [-Wunused-variable]
+   83 |   char msg[10];
+      |        ^~~
+../Core/Src/main.c:82:12: warning: unused variable 'raw' [-Wunused-variable]
+   82 |   uint16_t raw;
+      |            ^~~
+make: *** [Core/Src/subdir.mk:49: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+01:28:01 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:68:19: warning: passing argument 1 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+   68 | HAL_ADC_Start_DMA(&hadc1, buffer, 6);
+      |                   ^~~~~~
+      |                   |
+      |                   ADC_HandleTypeDef ** {aka struct <anonymous> **}
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:277,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h:1753:62: note: expected 'ADC_HandleTypeDef *' {aka 'struct <anonymous> *'} but argument is of type 'ADC_HandleTypeDef **' {aka 'struct <anonymous> **'}
+ 1753 | HAL_StatusTypeDef       HAL_ADC_Start_DMA(ADC_HandleTypeDef *hadc, uint32_t *pData, uint32_t Length);
+      |                                           ~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:118:60: warning: format '%d' expects a matching 'int' argument [-Wformat=]
+  118 |    uint8_t  len  =  sprintf((char*)string_buf, "value %d: %d \n", variable);
+      |                                                           ~^
+      |                                                            |
+      |                                                            int
+../Core/Src/main.c:121:11: warning: unused variable 'n_adc' [-Wunused-variable]
+  121 |    size_t n_adc = sizeof(adc)/sizeof(adc[0]);
+      |           ^~~~~
+../Core/Src/main.c:83:8: warning: unused variable 'msg' [-Wunused-variable]
+   83 |   char msg[10];
+      |        ^~~
+../Core/Src/main.c:82:12: warning: unused variable 'raw' [-Wunused-variable]
+   82 |   uint16_t raw;
+      |            ^~~
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  22836	    120	   2024	  24980	   6194	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+01:28:05 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-size   ArmuroLeer.elf 
+   text	   data	    bss	    dec	    hex	filename
+  22836	    120	   2024	  24980	   6194	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+01:31:10 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:68:19: warning: passing argument 1 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+   68 | HAL_ADC_Start_DMA(&hadc1, buffer, 6);
+      |                   ^~~~~~
+      |                   |
+      |                   ADC_HandleTypeDef ** {aka struct <anonymous> **}
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:277,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h:1753:62: note: expected 'ADC_HandleTypeDef *' {aka 'struct <anonymous> *'} but argument is of type 'ADC_HandleTypeDef **' {aka 'struct <anonymous> **'}
+ 1753 | HAL_StatusTypeDef       HAL_ADC_Start_DMA(ADC_HandleTypeDef *hadc, uint32_t *pData, uint32_t Length);
+      |                                           ~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:123:11: warning: unused variable 'n_adc' [-Wunused-variable]
+  123 |    size_t n_adc = sizeof(adc)/sizeof(adc[0]);
+      |           ^~~~~
+../Core/Src/main.c:83:8: warning: unused variable 'msg' [-Wunused-variable]
+   83 |   char msg[10];
+      |        ^~~
+../Core/Src/main.c:82:12: warning: unused variable 'raw' [-Wunused-variable]
+   82 |   uint16_t raw;
+      |            ^~~
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  23672	    120	   2024	  25816	   64d8	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+01:32:44 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:68:19: warning: passing argument 1 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+   68 | HAL_ADC_Start_DMA(&hadc1, buffer, 6);
+      |                   ^~~~~~
+      |                   |
+      |                   ADC_HandleTypeDef ** {aka struct <anonymous> **}
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:277,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h:1753:62: note: expected 'ADC_HandleTypeDef *' {aka 'struct <anonymous> *'} but argument is of type 'ADC_HandleTypeDef **' {aka 'struct <anonymous> **'}
+ 1753 | HAL_StatusTypeDef       HAL_ADC_Start_DMA(ADC_HandleTypeDef *hadc, uint32_t *pData, uint32_t Length);
+      |                                           ~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:83:8: warning: unused variable 'msg' [-Wunused-variable]
+   83 |   char msg[10];
+      |        ^~~
+../Core/Src/main.c:82:12: warning: unused variable 'raw' [-Wunused-variable]
+   82 |   uint16_t raw;
+      |            ^~~
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  23676	    120	   2024	  25820	   64dc	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+01:33:41 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:68:19: warning: passing argument 1 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+   68 | HAL_ADC_Start_DMA(&hadc1, buffer, 6);
+      |                   ^~~~~~
+      |                   |
+      |                   ADC_HandleTypeDef ** {aka struct <anonymous> **}
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:277,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h:1753:62: note: expected 'ADC_HandleTypeDef *' {aka 'struct <anonymous> *'} but argument is of type 'ADC_HandleTypeDef **' {aka 'struct <anonymous> **'}
+ 1753 | HAL_StatusTypeDef       HAL_ADC_Start_DMA(ADC_HandleTypeDef *hadc, uint32_t *pData, uint32_t Length);
+      |                                           ~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:119:4: error: too many arguments to function 'HAL_ADC_ConvCpltCallback'
+  119 |    HAL_ADC_ConvCpltCallback(&hadc1, HAL_MAX_DELAY);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:63:6: note: declared here
+   63 | void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc1)
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:83:8: warning: unused variable 'msg' [-Wunused-variable]
+   83 |   char msg[10];
+      |        ^~~
+../Core/Src/main.c:82:12: warning: unused variable 'raw' [-Wunused-variable]
+   82 |   uint16_t raw;
+      |            ^~~
+make: *** [Core/Src/subdir.mk:49: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+01:34:04 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:68:19: warning: passing argument 1 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+   68 | HAL_ADC_Start_DMA(&hadc1, buffer, 6);
+      |                   ^~~~~~
+      |                   |
+      |                   ADC_HandleTypeDef ** {aka struct <anonymous> **}
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:277,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h:1753:62: note: expected 'ADC_HandleTypeDef *' {aka 'struct <anonymous> *'} but argument is of type 'ADC_HandleTypeDef **' {aka 'struct <anonymous> **'}
+ 1753 | HAL_StatusTypeDef       HAL_ADC_Start_DMA(ADC_HandleTypeDef *hadc, uint32_t *pData, uint32_t Length);
+      |                                           ~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:83:8: warning: unused variable 'msg' [-Wunused-variable]
+   83 |   char msg[10];
+      |        ^~~
+../Core/Src/main.c:82:12: warning: unused variable 'raw' [-Wunused-variable]
+   82 |   uint16_t raw;
+      |            ^~~
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  24340	    120	   2024	  26484	   6774	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+01:34:05 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-size   ArmuroLeer.elf 
+   text	   data	    bss	    dec	    hex	filename
+  24340	    120	   2024	  26484	   6774	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+01:35:40 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:68:19: warning: passing argument 1 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+   68 | HAL_ADC_Start_DMA(&hadc1, buffer, 6);
+      |                   ^~~~~~
+      |                   |
+      |                   ADC_HandleTypeDef ** {aka struct <anonymous> **}
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:277,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h:1753:62: note: expected 'ADC_HandleTypeDef *' {aka 'struct <anonymous> *'} but argument is of type 'ADC_HandleTypeDef **' {aka 'struct <anonymous> **'}
+ 1753 | HAL_StatusTypeDef       HAL_ADC_Start_DMA(ADC_HandleTypeDef *hadc, uint32_t *pData, uint32_t Length);
+      |                                           ~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:83:8: warning: unused variable 'msg' [-Wunused-variable]
+   83 |   char msg[10];
+      |        ^~~
+../Core/Src/main.c:82:12: warning: unused variable 'raw' [-Wunused-variable]
+   82 |   uint16_t raw;
+      |            ^~~
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  24340	    120	   2024	  26484	   6774	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+01:39:15 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:68:19: warning: passing argument 1 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+   68 | HAL_ADC_Start_DMA(&hadc1, buffer, 6);
+      |                   ^~~~~~
+      |                   |
+      |                   ADC_HandleTypeDef ** {aka struct <anonymous> **}
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:277,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h:1753:62: note: expected 'ADC_HandleTypeDef *' {aka 'struct <anonymous> *'} but argument is of type 'ADC_HandleTypeDef **' {aka 'struct <anonymous> **'}
+ 1753 | HAL_StatusTypeDef       HAL_ADC_Start_DMA(ADC_HandleTypeDef *hadc, uint32_t *pData, uint32_t Length);
+      |                                           ~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:83:8: warning: unused variable 'msg' [-Wunused-variable]
+   83 |   char msg[10];
+      |        ^~~
+../Core/Src/main.c:82:12: warning: unused variable 'raw' [-Wunused-variable]
+   82 |   uint16_t raw;
+      |            ^~~
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  24636	    120	   2024	  26780	   689c	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+01:42:42 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:68:19: warning: passing argument 1 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+   68 | HAL_ADC_Start_DMA(&hadc1, buffer, 6);
+      |                   ^~~~~~
+      |                   |
+      |                   ADC_HandleTypeDef ** {aka struct <anonymous> **}
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:277,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h:1753:62: note: expected 'ADC_HandleTypeDef *' {aka 'struct <anonymous> *'} but argument is of type 'ADC_HandleTypeDef **' {aka 'struct <anonymous> **'}
+ 1753 | HAL_StatusTypeDef       HAL_ADC_Start_DMA(ADC_HandleTypeDef *hadc, uint32_t *pData, uint32_t Length);
+      |                                           ~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:83:8: warning: unused variable 'msg' [-Wunused-variable]
+   83 |   char msg[10];
+      |        ^~~
+../Core/Src/main.c:82:12: warning: unused variable 'raw' [-Wunused-variable]
+   82 |   uint16_t raw;
+      |            ^~~
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  24680	    120	   2024	  26824	   68c8	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+01:44:19 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-size   ArmuroLeer.elf 
+   text	   data	    bss	    dec	    hex	filename
+  24680	    120	   2024	  26824	   68c8	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+01:50:07 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:68:19: warning: passing argument 1 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+   68 | HAL_ADC_Start_DMA(&hadc1, buffer, 6);
+      |                   ^~~~~~
+      |                   |
+      |                   ADC_HandleTypeDef ** {aka struct <anonymous> **}
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:277,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h:1753:62: note: expected 'ADC_HandleTypeDef *' {aka 'struct <anonymous> *'} but argument is of type 'ADC_HandleTypeDef **' {aka 'struct <anonymous> **'}
+ 1753 | HAL_StatusTypeDef       HAL_ADC_Start_DMA(ADC_HandleTypeDef *hadc, uint32_t *pData, uint32_t Length);
+      |                                           ~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:123:37: error: subscripted value is neither array nor pointer nor vector
+  123 |     adc[i] = HAL_ADC_GetValue(&hadc1[i]);
+      |                                     ^
+../Core/Src/main.c:124:5: error: 'variable' undeclared (first use in this function)
+  124 |     variable = adc[i];
+      |     ^~~~~~~~
+../Core/Src/main.c:124:5: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:125:5: error: 'len' undeclared (first use in this function)
+  125 |     len  =  sprintf((char*)string_buf, "value %d: %d \n", i, variable);
+      |     ^~~
+../Core/Src/main.c:83:8: warning: unused variable 'msg' [-Wunused-variable]
+   83 |   char msg[10];
+      |        ^~~
+../Core/Src/main.c:82:12: warning: unused variable 'raw' [-Wunused-variable]
+   82 |   uint16_t raw;
+      |            ^~~
+make: *** [Core/Src/subdir.mk:49: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+01:50:35 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:68:19: warning: passing argument 1 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+   68 | HAL_ADC_Start_DMA(&hadc1, buffer, 6);
+      |                   ^~~~~~
+      |                   |
+      |                   ADC_HandleTypeDef ** {aka struct <anonymous> **}
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:277,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h:1753:62: note: expected 'ADC_HandleTypeDef *' {aka 'struct <anonymous> *'} but argument is of type 'ADC_HandleTypeDef **' {aka 'struct <anonymous> **'}
+ 1753 | HAL_StatusTypeDef       HAL_ADC_Start_DMA(ADC_HandleTypeDef *hadc, uint32_t *pData, uint32_t Length);
+      |                                           ~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:123:37: error: subscripted value is neither array nor pointer nor vector
+  123 |     adc[i] = HAL_ADC_GetValue(&hadc1[i]);
+      |                                     ^
+../Core/Src/main.c:124:5: error: 'variable' undeclared (first use in this function)
+  124 |     variable = adc[i];
+      |     ^~~~~~~~
+../Core/Src/main.c:124:5: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:83:8: warning: unused variable 'msg' [-Wunused-variable]
+   83 |   char msg[10];
+      |        ^~~
+../Core/Src/main.c:82:12: warning: unused variable 'raw' [-Wunused-variable]
+   82 |   uint16_t raw;
+      |            ^~~
+make: *** [Core/Src/subdir.mk:49: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+01:51:44 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:68:19: warning: passing argument 1 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+   68 | HAL_ADC_Start_DMA(&hadc1, buffer, 6);
+      |                   ^~~~~~
+      |                   |
+      |                   ADC_HandleTypeDef ** {aka struct <anonymous> **}
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:277,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h:1753:62: note: expected 'ADC_HandleTypeDef *' {aka 'struct <anonymous> *'} but argument is of type 'ADC_HandleTypeDef **' {aka 'struct <anonymous> **'}
+ 1753 | HAL_StatusTypeDef       HAL_ADC_Start_DMA(ADC_HandleTypeDef *hadc, uint32_t *pData, uint32_t Length);
+      |                                           ~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:124:38: error: subscripted value is neither array nor pointer nor vector
+  124 |     adc[i] = HAL_ADC_GetValue(&(hadc1[i]));
+      |                                      ^
+../Core/Src/main.c:83:8: warning: unused variable 'msg' [-Wunused-variable]
+   83 |   char msg[10];
+      |        ^~~
+../Core/Src/main.c:82:12: warning: unused variable 'raw' [-Wunused-variable]
+   82 |   uint16_t raw;
+      |            ^~~
+make: *** [Core/Src/subdir.mk:49: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+01:55:44 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:68:19: warning: passing argument 1 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+   68 | HAL_ADC_Start_DMA(&hadc1, buffer, 6);
+      |                   ^~~~~~
+      |                   |
+      |                   ADC_HandleTypeDef ** {aka struct <anonymous> **}
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:277,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h:1753:62: note: expected 'ADC_HandleTypeDef *' {aka 'struct <anonymous> *'} but argument is of type 'ADC_HandleTypeDef **' {aka 'struct <anonymous> **'}
+ 1753 | HAL_StatusTypeDef       HAL_ADC_Start_DMA(ADC_HandleTypeDef *hadc, uint32_t *pData, uint32_t Length);
+      |                                           ~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:83:8: warning: unused variable 'msg' [-Wunused-variable]
+   83 |   char msg[10];
+      |        ^~~
+../Core/Src/main.c:82:12: warning: unused variable 'raw' [-Wunused-variable]
+   82 |   uint16_t raw;
+      |            ^~~
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  24676	    120	   2024	  26820	   68c4	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+01:55:48 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-size   ArmuroLeer.elf 
+   text	   data	    bss	    dec	    hex	filename
+  24676	    120	   2024	  26820	   68c4	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+01:59:41 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:68:19: warning: passing argument 1 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+   68 | HAL_ADC_Start_DMA(&hadc1, buffer, 6);
+      |                   ^~~~~~
+      |                   |
+      |                   ADC_HandleTypeDef ** {aka struct <anonymous> **}
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:277,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h:1753:62: note: expected 'ADC_HandleTypeDef *' {aka 'struct <anonymous> *'} but argument is of type 'ADC_HandleTypeDef **' {aka 'struct <anonymous> **'}
+ 1753 | HAL_StatusTypeDef       HAL_ADC_Start_DMA(ADC_HandleTypeDef *hadc, uint32_t *pData, uint32_t Length);
+      |                                           ~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:134:37: error: subscripted value is neither array nor pointer nor vector
+  134 |    adc[0] = HAL_ADC_GetValue(&(hadc1[1]));
+      |                                     ^
+../Core/Src/main.c:83:8: warning: unused variable 'msg' [-Wunused-variable]
+   83 |   char msg[10];
+      |        ^~~
+../Core/Src/main.c:82:12: warning: unused variable 'raw' [-Wunused-variable]
+   82 |   uint16_t raw;
+      |            ^~~
+make: *** [Core/Src/subdir.mk:49: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+02:00:37 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:68:19: warning: passing argument 1 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+   68 | HAL_ADC_Start_DMA(&hadc1, buffer, 6);
+      |                   ^~~~~~
+      |                   |
+      |                   ADC_HandleTypeDef ** {aka struct <anonymous> **}
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:277,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h:1753:62: note: expected 'ADC_HandleTypeDef *' {aka 'struct <anonymous> *'} but argument is of type 'ADC_HandleTypeDef **' {aka 'struct <anonymous> **'}
+ 1753 | HAL_StatusTypeDef       HAL_ADC_Start_DMA(ADC_HandleTypeDef *hadc, uint32_t *pData, uint32_t Length);
+      |                                           ~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:134:37: error: invalid operands to binary + (have 'ADC_HandleTypeDef' {aka 'struct <anonymous>'} and 'int')
+  134 |    adc[0] = HAL_ADC_GetValue(&(hadc1+1));
+      |                                     ^
+../Core/Src/main.c:83:8: warning: unused variable 'msg' [-Wunused-variable]
+   83 |   char msg[10];
+      |        ^~~
+../Core/Src/main.c:82:12: warning: unused variable 'raw' [-Wunused-variable]
+   82 |   uint16_t raw;
+      |            ^~~
+make: *** [Core/Src/subdir.mk:49: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+02:01:18 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:68:19: warning: passing argument 1 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+   68 | HAL_ADC_Start_DMA(&hadc1, buffer, 6);
+      |                   ^~~~~~
+      |                   |
+      |                   ADC_HandleTypeDef ** {aka struct <anonymous> **}
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:277,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h:1753:62: note: expected 'ADC_HandleTypeDef *' {aka 'struct <anonymous> *'} but argument is of type 'ADC_HandleTypeDef **' {aka 'struct <anonymous> **'}
+ 1753 | HAL_StatusTypeDef       HAL_ADC_Start_DMA(ADC_HandleTypeDef *hadc, uint32_t *pData, uint32_t Length);
+      |                                           ~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:134:16: error: lvalue required as unary '&' operand
+  134 |    int* test = &HAL_ADC_GetValue(&hadc1);
+      |                ^
+../Core/Src/main.c:134:9: warning: unused variable 'test' [-Wunused-variable]
+  134 |    int* test = &HAL_ADC_GetValue(&hadc1);
+      |         ^~~~
+../Core/Src/main.c:83:8: warning: unused variable 'msg' [-Wunused-variable]
+   83 |   char msg[10];
+      |        ^~~
+../Core/Src/main.c:82:12: warning: unused variable 'raw' [-Wunused-variable]
+   82 |   uint16_t raw;
+      |            ^~~
+make: *** [Core/Src/subdir.mk:49: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+02:05:58 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:68:19: warning: passing argument 1 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+   68 | HAL_ADC_Start_DMA(&hadc1, buffer, 6);
+      |                   ^~~~~~
+      |                   |
+      |                   ADC_HandleTypeDef ** {aka struct <anonymous> **}
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:277,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h:1753:62: note: expected 'ADC_HandleTypeDef *' {aka 'struct <anonymous> *'} but argument is of type 'ADC_HandleTypeDef **' {aka 'struct <anonymous> **'}
+ 1753 | HAL_StatusTypeDef       HAL_ADC_Start_DMA(ADC_HandleTypeDef *hadc, uint32_t *pData, uint32_t Length);
+      |                                           ~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:131:4: error: 'sConfig' undeclared (first use in this function)
+  131 |    sConfig.Channel = ADC_CHANNEL_6;
+      |    ^~~~~~~
+../Core/Src/main.c:131:4: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:132:4: warning: implicit declaration of function 'HAL_ADC_Config_Channel'; did you mean 'HAL_ADC_ConfigChannel'? [-Wimplicit-function-declaration]
+  132 |    HAL_ADC_Config_Channel(&hadc1, &sConfig);
+      |    ^~~~~~~~~~~~~~~~~~~~~~
+      |    HAL_ADC_ConfigChannel
+../Core/Src/main.c:83:8: warning: unused variable 'msg' [-Wunused-variable]
+   83 |   char msg[10];
+      |        ^~~
+../Core/Src/main.c:82:12: warning: unused variable 'raw' [-Wunused-variable]
+   82 |   uint16_t raw;
+      |            ^~~
+make: *** [Core/Src/subdir.mk:49: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+02:07:05 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:69:19: warning: passing argument 1 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+   69 | HAL_ADC_Start_DMA(&hadc1, buffer, 6);
+      |                   ^~~~~~
+      |                   |
+      |                   ADC_HandleTypeDef ** {aka struct <anonymous> **}
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:277,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h:1753:62: note: expected 'ADC_HandleTypeDef *' {aka 'struct <anonymous> *'} but argument is of type 'ADC_HandleTypeDef **' {aka 'struct <anonymous> **'}
+ 1753 | HAL_StatusTypeDef       HAL_ADC_Start_DMA(ADC_HandleTypeDef *hadc, uint32_t *pData, uint32_t Length);
+      |                                           ~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:133:4: warning: implicit declaration of function 'HAL_ADC_Config_Channel'; did you mean 'HAL_ADC_ConfigChannel'? [-Wimplicit-function-declaration]
+  133 |    HAL_ADC_Config_Channel(&hadc1, &sConfig);
+      |    ^~~~~~~~~~~~~~~~~~~~~~
+      |    HAL_ADC_ConfigChannel
+../Core/Src/main.c:84:8: warning: unused variable 'msg' [-Wunused-variable]
+   84 |   char msg[10];
+      |        ^~~
+../Core/Src/main.c:83:12: warning: unused variable 'raw' [-Wunused-variable]
+   83 |   uint16_t raw;
+      |            ^~~
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\program files\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/main.o: in function `main':
+C:/Users/Pierre/Documents/edu/uni/robotics/ArmuroLeer/Debug/../Core/Src/main.c:133: undefined reference to `HAL_ADC_Config_Channel'
+c:\program files\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: C:/Users/Pierre/Documents/edu/uni/robotics/ArmuroLeer/Debug/../Core/Src/main.c:140: undefined reference to `HAL_ADC_Config_Channel'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:65: ArmuroLeer.elf] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+02:07:51 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:69:19: warning: passing argument 1 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+   69 | HAL_ADC_Start_DMA(&hadc1, buffer, 6);
+      |                   ^~~~~~
+      |                   |
+      |                   ADC_HandleTypeDef ** {aka struct <anonymous> **}
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:277,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h:1753:62: note: expected 'ADC_HandleTypeDef *' {aka 'struct <anonymous> *'} but argument is of type 'ADC_HandleTypeDef **' {aka 'struct <anonymous> **'}
+ 1753 | HAL_StatusTypeDef       HAL_ADC_Start_DMA(ADC_HandleTypeDef *hadc, uint32_t *pData, uint32_t Length);
+      |                                           ~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:84:8: warning: unused variable 'msg' [-Wunused-variable]
+   84 |   char msg[10];
+      |        ^~~
+../Core/Src/main.c:83:12: warning: unused variable 'raw' [-Wunused-variable]
+   83 |   uint16_t raw;
+      |            ^~~
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  24748	    120	   2048	  26916	   6924	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+02:07:55 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-size   ArmuroLeer.elf 
+   text	   data	    bss	    dec	    hex	filename
+  24748	    120	   2048	  26916	   6924	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+02:08:40 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-size   ArmuroLeer.elf 
+   text	   data	    bss	    dec	    hex	filename
+  24748	    120	   2048	  26916	   6924	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+02:09:55 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:69:19: warning: passing argument 1 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+   69 | HAL_ADC_Start_DMA(&hadc1, buffer, 6);
+      |                   ^~~~~~
+      |                   |
+      |                   ADC_HandleTypeDef ** {aka struct <anonymous> **}
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:277,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h:1753:62: note: expected 'ADC_HandleTypeDef *' {aka 'struct <anonymous> *'} but argument is of type 'ADC_HandleTypeDef **' {aka 'struct <anonymous> **'}
+ 1753 | HAL_StatusTypeDef       HAL_ADC_Start_DMA(ADC_HandleTypeDef *hadc, uint32_t *pData, uint32_t Length);
+      |                                           ~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:84:8: warning: unused variable 'msg' [-Wunused-variable]
+   84 |   char msg[10];
+      |        ^~~
+../Core/Src/main.c:83:12: warning: unused variable 'raw' [-Wunused-variable]
+   83 |   uint16_t raw;
+      |            ^~~
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  24748	    120	   2048	  26916	   6924	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+02:26:02 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:69:19: warning: passing argument 1 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+   69 | HAL_ADC_Start_DMA(&hadc1, buffer, 6);
+      |                   ^~~~~~
+      |                   |
+      |                   ADC_HandleTypeDef ** {aka struct <anonymous> **}
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:277,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h:1753:62: note: expected 'ADC_HandleTypeDef *' {aka 'struct <anonymous> *'} but argument is of type 'ADC_HandleTypeDef **' {aka 'struct <anonymous> **'}
+ 1753 | HAL_StatusTypeDef       HAL_ADC_Start_DMA(ADC_HandleTypeDef *hadc, uint32_t *pData, uint32_t Length);
+      |                                           ~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/main.c: In function 'ACCELERATE_MOTOR':
+../Core/Src/main.c:126:7: error: 'percentage' undeclared (first use in this function)
+  126 |    if(percentage<0 || percentage>1){
+      |       ^~~~~~~~~~
+../Core/Src/main.c:126:7: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:86:8: warning: unused variable 'msg' [-Wunused-variable]
+   86 |   char msg[10];
+      |        ^~~
+../Core/Src/main.c:85:12: warning: unused variable 'raw' [-Wunused-variable]
+   85 |   uint16_t raw;
+      |            ^~~
+make: *** [Core/Src/subdir.mk:49: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+02:26:24 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:69:19: warning: passing argument 1 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+   69 | HAL_ADC_Start_DMA(&hadc1, buffer, 6);
+      |                   ^~~~~~
+      |                   |
+      |                   ADC_HandleTypeDef ** {aka struct <anonymous> **}
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:277,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h:1753:62: note: expected 'ADC_HandleTypeDef *' {aka 'struct <anonymous> *'} but argument is of type 'ADC_HandleTypeDef **' {aka 'struct <anonymous> **'}
+ 1753 | HAL_StatusTypeDef       HAL_ADC_Start_DMA(ADC_HandleTypeDef *hadc, uint32_t *pData, uint32_t Length);
+      |                                           ~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/main.c: In function 'ACCELERATE_MOTOR':
+../Core/Src/main.c:127:5: error: 'percentage' undeclared (first use in this function)
+  127 |     percentage = 0.5;
+      |     ^~~~~~~~~~
+../Core/Src/main.c:127:5: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:86:8: warning: unused variable 'msg' [-Wunused-variable]
+   86 |   char msg[10];
+      |        ^~~
+../Core/Src/main.c:85:12: warning: unused variable 'raw' [-Wunused-variable]
+   85 |   uint16_t raw;
+      |            ^~~
+make: *** [Core/Src/subdir.mk:49: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+02:26:36 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:69:19: warning: passing argument 1 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+   69 | HAL_ADC_Start_DMA(&hadc1, buffer, 6);
+      |                   ^~~~~~
+      |                   |
+      |                   ADC_HandleTypeDef ** {aka struct <anonymous> **}
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:277,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h:1753:62: note: expected 'ADC_HandleTypeDef *' {aka 'struct <anonymous> *'} but argument is of type 'ADC_HandleTypeDef **' {aka 'struct <anonymous> **'}
+ 1753 | HAL_StatusTypeDef       HAL_ADC_Start_DMA(ADC_HandleTypeDef *hadc, uint32_t *pData, uint32_t Length);
+      |                                           ~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/main.c: In function 'ACCELERATE_MOTOR':
+../Core/Src/main.c:129:27: error: 'percentage' undeclared (first use in this function)
+  129 |    int powervalue = (int) percentage * 30000;
+      |                           ^~~~~~~~~~
+../Core/Src/main.c:129:27: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:86:8: warning: unused variable 'msg' [-Wunused-variable]
+   86 |   char msg[10];
+      |        ^~~
+../Core/Src/main.c:85:12: warning: unused variable 'raw' [-Wunused-variable]
+   85 |   uint16_t raw;
+      |            ^~~
+make: *** [Core/Src/subdir.mk:49: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+02:26:43 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:69:19: warning: passing argument 1 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+   69 | HAL_ADC_Start_DMA(&hadc1, buffer, 6);
+      |                   ^~~~~~
+      |                   |
+      |                   ADC_HandleTypeDef ** {aka struct <anonymous> **}
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:277,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h:1753:62: note: expected 'ADC_HandleTypeDef *' {aka 'struct <anonymous> *'} but argument is of type 'ADC_HandleTypeDef **' {aka 'struct <anonymous> **'}
+ 1753 | HAL_StatusTypeDef       HAL_ADC_Start_DMA(ADC_HandleTypeDef *hadc, uint32_t *pData, uint32_t Length);
+      |                                           ~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:86:8: warning: unused variable 'msg' [-Wunused-variable]
+   86 |   char msg[10];
+      |        ^~~
+../Core/Src/main.c:85:12: warning: unused variable 'raw' [-Wunused-variable]
+   85 |   uint16_t raw;
+      |            ^~~
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  20788	     20	   1948	  22756	   58e4	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+02:26:48 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-size   ArmuroLeer.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20788	     20	   1948	  22756	   58e4	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+02:28:00 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  20400	     20	   1948	  22368	   5760	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+02:30:11 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  20744	     20	   1948	  22712	   58b8	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+02:31:42 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:4: error: 'variable' undeclared (first use in this function)
+  113 |    variable = powervalue;
+      |    ^~~~~~~~
+../Core/Src/main.c:113:4: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:114:4: error: 'len' undeclared (first use in this function)
+  114 |    len  =  sprintf((char*)string_buf, "value %d: %d \n", i, variable);
+      |    ^~~
+../Core/Src/main.c:114:12: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  114 |    len  =  sprintf((char*)string_buf, "value %d: %d \n", i, variable);
+      |            ^~~~~~~
+../Core/Src/main.c:114:12: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:27:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   26 | #include "gpio.h"
+  +++ |+#include <stdio.h>
+   27 | 
+../Core/Src/main.c:114:27: error: 'string_buf' undeclared (first use in this function)
+  114 |    len  =  sprintf((char*)string_buf, "value %d: %d \n", i, variable);
+      |                           ^~~~~~~~~~
+../Core/Src/main.c:114:58: error: 'i' undeclared (first use in this function)
+  114 |    len  =  sprintf((char*)string_buf, "value %d: %d \n", i, variable);
+      |                                                          ^
+make: *** [Core/Src/subdir.mk:49: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+02:32:21 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:115:4: error: 'variable' undeclared (first use in this function)
+  115 |    variable = powervalue;
+      |    ^~~~~~~~
+../Core/Src/main.c:115:4: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:116:4: error: 'len' undeclared (first use in this function)
+  116 |    len  =  sprintf((char*)string_buf, "value %d: %d \n", i, variable);
+      |    ^~~
+../Core/Src/main.c:116:27: error: 'string_buf' undeclared (first use in this function)
+  116 |    len  =  sprintf((char*)string_buf, "value %d: %d \n", i, variable);
+      |                           ^~~~~~~~~~
+../Core/Src/main.c:116:58: error: 'i' undeclared (first use in this function)
+  116 |    len  =  sprintf((char*)string_buf, "value %d: %d \n", i, variable);
+      |                                                          ^
+make: *** [Core/Src/subdir.mk:49: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+02:37:03 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  25832	    120	   1976	  27928	   6d18	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+02:37:07 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-size   ArmuroLeer.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25832	    120	   1976	  27928	   6d18	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+02:38:43 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  20288	     20	   1948	  22256	   56f0	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+02:47:17 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'motor_control':
+../Core/Src/main.c:104:27: warning: implicit declaration of function 'abs' [-Wimplicit-function-declaration]
+  104 |       TIM1->CCR2 = 6553 * abs(speed[0]);
+      |                           ^~~
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  20472	     20	   1948	  22440	   57a8	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+02:48:01 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'motor_control':
+../Core/Src/main.c:104:27: warning: implicit declaration of function 'abs' [-Wimplicit-function-declaration]
+  104 |       TIM1->CCR2 = 6553 * abs(speed[0]);
+      |                           ^~~
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  20472	     20	   1948	  22440	   57a8	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+02:48:40 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'motor_control':
+../Core/Src/main.c:104:27: warning: implicit declaration of function 'abs' [-Wimplicit-function-declaration]
+  104 |       TIM1->CCR2 = 6553 * abs(speed[0]);
+      |                           ^~~
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  20472	     20	   1948	  22440	   57a8	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+02:54:08 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'motor_control':
+../Core/Src/main.c:104:27: warning: implicit declaration of function 'abs' [-Wimplicit-function-declaration]
+  104 |       TIM1->CCR2 = 6553 * abs(speed[0]);
+      |                           ^~~
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  20468	     20	   1948	  22436	   57a4	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+02:54:53 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'motor_control':
+../Core/Src/main.c:104:27: warning: implicit declaration of function 'abs' [-Wimplicit-function-declaration]
+  104 |       TIM1->CCR2 = 6553 * abs(speed[0]);
+      |                           ^~~
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  20560	     20	   1948	  22528	   5800	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+02:55:26 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'motor_control':
+../Core/Src/main.c:104:27: warning: implicit declaration of function 'abs' [-Wimplicit-function-declaration]
+  104 |       TIM1->CCR2 = 6553 * abs(speed[0]);
+      |                           ^~~
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  20484	     20	   1948	  22452	   57b4	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+02:55:41 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'motor_control':
+../Core/Src/main.c:104:27: warning: implicit declaration of function 'abs' [-Wimplicit-function-declaration]
+  104 |       TIM1->CCR2 = 6553 * abs(speed[0]);
+      |                           ^~~
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  20484	     20	   1948	  22452	   57b4	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+02:57:08 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'motor_control':
+../Core/Src/main.c:104:27: warning: implicit declaration of function 'abs' [-Wimplicit-function-declaration]
+  104 |       TIM1->CCR2 = 6553 * abs(speed[0]);
+      |                           ^~~
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  20488	     20	   1948	  22456	   57b8	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+02:58:31 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'motor_control':
+../Core/Src/main.c:104:27: warning: implicit declaration of function 'abs' [-Wimplicit-function-declaration]
+  104 |       TIM1->CCR2 = 6553 * abs(speed[0]);
+      |                           ^~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:119:8: warning: unused variable 'speedd' [-Wunused-variable]
+  119 |    int speedd[2] = {10,10};
+      |        ^~~~~~
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  20504	     20	   1948	  22472	   57c8	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+02:58:45 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'motor_control':
+../Core/Src/main.c:104:27: warning: implicit declaration of function 'abs' [-Wimplicit-function-declaration]
+  104 |       TIM1->CCR2 = 6553 * abs(speed[0]);
+      |                           ^~~
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  20504	     20	   1948	  22472	   57c8	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+02:59:41 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'motor_control':
+../Core/Src/main.c:104:27: warning: implicit declaration of function 'abs' [-Wimplicit-function-declaration]
+  104 |       TIM1->CCR2 = 6553 * abs(speed[0]);
+      |                           ^~~
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  20596	     20	   1948	  22564	   5824	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+03:04:30 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:114:4: error: too few arguments to function 'motor_control'
+  114 |    motor_control(10000);
+      |    ^~~~~~~~~~~~~
+../Core/Src/main.c:102:8: note: declared here
+  102 |   void motor_control(int left_motor_speed, int right_motor_speed) {
+      |        ^~~~~~~~~~~~~
+../Core/Src/main.c:116:4: error: too few arguments to function 'motor_control'
+  116 |    motor_control(20000);
+      |    ^~~~~~~~~~~~~
+../Core/Src/main.c:102:8: note: declared here
+  102 |   void motor_control(int left_motor_speed, int right_motor_speed) {
+      |        ^~~~~~~~~~~~~
+../Core/Src/main.c:118:4: error: too few arguments to function 'motor_control'
+  118 |    motor_control(40000);
+      |    ^~~~~~~~~~~~~
+../Core/Src/main.c:102:8: note: declared here
+  102 |   void motor_control(int left_motor_speed, int right_motor_speed) {
+      |        ^~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:49: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+03:04:52 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  20460	     20	   1948	  22428	   579c	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+03:04:54 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-size   ArmuroLeer.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20460	     20	   1948	  22428	   579c	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+03:10:39 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  20512	     20	   1948	  22480	   57d0	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+03:13:12 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'motor_control':
+../Core/Src/main.c:106:7: warning: implicit declaration of function 'abs' [-Wimplicit-function-declaration]
+  106 |    if(abs(left_motor_speed)<0 || abs(left_motor_speed)>1){
+      |       ^~~
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  20392	     20	   1948	  22360	   5758	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+03:13:49 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'motor_control':
+../Core/Src/main.c:106:7: warning: implicit declaration of function 'abs' [-Wimplicit-function-declaration]
+  106 |    if(abs(left_motor_speed)<0 || abs(left_motor_speed)>1){
+      |       ^~~
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  20392	     20	   1948	  22360	   5758	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+03:14:25 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'motor_control':
+../Core/Src/main.c:106:7: warning: implicit declaration of function 'abs' [-Wimplicit-function-declaration]
+  106 |    if(abs(left_motor_speed)<0 || abs(left_motor_speed)>1){
+      |       ^~~
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  20508	     20	   1948	  22476	   57cc	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+03:14:52 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'motor_control':
+../Core/Src/main.c:106:7: warning: implicit declaration of function 'abs' [-Wimplicit-function-declaration]
+  106 |    if(abs(left_motor_speed)<0 || abs(left_motor_speed)>1){
+      |       ^~~
+../Core/Src/main.c:106:11: warning: 'abs' argument 1 type is 'double' where 'int' is expected in a call to built-in function declared without prototype [-Wbuiltin-declaration-mismatch]
+  106 |    if(abs(left_motor_speed)<0 || abs(left_motor_speed)>1){
+      |           ^~~~~~~~~~~~~~~~
+<built-in>: note: built-in 'abs' declared here
+../Core/Src/main.c:106:38: warning: 'abs' argument 1 type is 'double' where 'int' is expected in a call to built-in function declared without prototype [-Wbuiltin-declaration-mismatch]
+  106 |    if(abs(left_motor_speed)<0 || abs(left_motor_speed)>1){
+      |                                      ^~~~~~~~~~~~~~~~
+<built-in>: note: built-in 'abs' declared here
+../Core/Src/main.c:110:11: warning: 'abs' argument 1 type is 'double' where 'int' is expected in a call to built-in function declared without prototype [-Wbuiltin-declaration-mismatch]
+  110 |    if(abs(right_motor_speed)<0 || abs(right_motor_speed)>1){
+      |           ^~~~~~~~~~~~~~~~~
+<built-in>: note: built-in 'abs' declared here
+../Core/Src/main.c:110:39: warning: 'abs' argument 1 type is 'double' where 'int' is expected in a call to built-in function declared without prototype [-Wbuiltin-declaration-mismatch]
+  110 |    if(abs(right_motor_speed)<0 || abs(right_motor_speed)>1){
+      |                                       ^~~~~~~~~~~~~~~~~
+<built-in>: note: built-in 'abs' declared here
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  21188	     20	   1948	  23156	   5a74	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+03:16:30 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'motor_control':
+../Core/Src/main.c:106:7: warning: implicit declaration of function 'abs' [-Wimplicit-function-declaration]
+  106 |    if(abs(left_motor_speed)<0 || abs(left_motor_speed)>1){
+      |       ^~~
+../Core/Src/main.c:106:11: warning: 'abs' argument 1 type is 'double' where 'int' is expected in a call to built-in function declared without prototype [-Wbuiltin-declaration-mismatch]
+  106 |    if(abs(left_motor_speed)<0 || abs(left_motor_speed)>1){
+      |           ^~~~~~~~~~~~~~~~
+<built-in>: note: built-in 'abs' declared here
+../Core/Src/main.c:106:38: warning: 'abs' argument 1 type is 'double' where 'int' is expected in a call to built-in function declared without prototype [-Wbuiltin-declaration-mismatch]
+  106 |    if(abs(left_motor_speed)<0 || abs(left_motor_speed)>1){
+      |                                      ^~~~~~~~~~~~~~~~
+<built-in>: note: built-in 'abs' declared here
+../Core/Src/main.c:110:11: warning: 'abs' argument 1 type is 'double' where 'int' is expected in a call to built-in function declared without prototype [-Wbuiltin-declaration-mismatch]
+  110 |    if(abs(right_motor_speed)<0 || abs(right_motor_speed)>1){
+      |           ^~~~~~~~~~~~~~~~~
+<built-in>: note: built-in 'abs' declared here
+../Core/Src/main.c:110:39: warning: 'abs' argument 1 type is 'double' where 'int' is expected in a call to built-in function declared without prototype [-Wbuiltin-declaration-mismatch]
+  110 |    if(abs(right_motor_speed)<0 || abs(right_motor_speed)>1){
+      |                                       ^~~~~~~~~~~~~~~~~
+<built-in>: note: built-in 'abs' declared here
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  21284	     20	   1948	  23252	   5ad4	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+03:17:18 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'motor_control':
+../Core/Src/main.c:106:7: warning: implicit declaration of function 'abs' [-Wimplicit-function-declaration]
+  106 |    if(abs(left_motor_speed)<0 || abs(left_motor_speed)>1){
+      |       ^~~
+../Core/Src/main.c:106:11: warning: 'abs' argument 1 type is 'double' where 'int' is expected in a call to built-in function declared without prototype [-Wbuiltin-declaration-mismatch]
+  106 |    if(abs(left_motor_speed)<0 || abs(left_motor_speed)>1){
+      |           ^~~~~~~~~~~~~~~~
+<built-in>: note: built-in 'abs' declared here
+../Core/Src/main.c:106:38: warning: 'abs' argument 1 type is 'double' where 'int' is expected in a call to built-in function declared without prototype [-Wbuiltin-declaration-mismatch]
+  106 |    if(abs(left_motor_speed)<0 || abs(left_motor_speed)>1){
+      |                                      ^~~~~~~~~~~~~~~~
+<built-in>: note: built-in 'abs' declared here
+../Core/Src/main.c:110:11: warning: 'abs' argument 1 type is 'double' where 'int' is expected in a call to built-in function declared without prototype [-Wbuiltin-declaration-mismatch]
+  110 |    if(abs(right_motor_speed)<0 || abs(right_motor_speed)>1){
+      |           ^~~~~~~~~~~~~~~~~
+<built-in>: note: built-in 'abs' declared here
+../Core/Src/main.c:110:39: warning: 'abs' argument 1 type is 'double' where 'int' is expected in a call to built-in function declared without prototype [-Wbuiltin-declaration-mismatch]
+  110 |    if(abs(right_motor_speed)<0 || abs(right_motor_speed)>1){
+      |                                       ^~~~~~~~~~~~~~~~~
+<built-in>: note: built-in 'abs' declared here
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  21288	     20	   1948	  23256	   5ad8	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+03:17:38 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'motor_control':
+../Core/Src/main.c:106:7: warning: implicit declaration of function 'abs' [-Wimplicit-function-declaration]
+  106 |    if(abs(left_motor_speed)<0 || abs(left_motor_speed)>1){
+      |       ^~~
+../Core/Src/main.c:106:11: warning: 'abs' argument 1 type is 'double' where 'int' is expected in a call to built-in function declared without prototype [-Wbuiltin-declaration-mismatch]
+  106 |    if(abs(left_motor_speed)<0 || abs(left_motor_speed)>1){
+      |           ^~~~~~~~~~~~~~~~
+<built-in>: note: built-in 'abs' declared here
+../Core/Src/main.c:106:38: warning: 'abs' argument 1 type is 'double' where 'int' is expected in a call to built-in function declared without prototype [-Wbuiltin-declaration-mismatch]
+  106 |    if(abs(left_motor_speed)<0 || abs(left_motor_speed)>1){
+      |                                      ^~~~~~~~~~~~~~~~
+<built-in>: note: built-in 'abs' declared here
+../Core/Src/main.c:110:11: warning: 'abs' argument 1 type is 'double' where 'int' is expected in a call to built-in function declared without prototype [-Wbuiltin-declaration-mismatch]
+  110 |    if(abs(right_motor_speed)<0 || abs(right_motor_speed)>1){
+      |           ^~~~~~~~~~~~~~~~~
+<built-in>: note: built-in 'abs' declared here
+../Core/Src/main.c:110:39: warning: 'abs' argument 1 type is 'double' where 'int' is expected in a call to built-in function declared without prototype [-Wbuiltin-declaration-mismatch]
+  110 |    if(abs(right_motor_speed)<0 || abs(right_motor_speed)>1){
+      |                                       ^~~~~~~~~~~~~~~~~
+<built-in>: note: built-in 'abs' declared here
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  21296	     20	   1948	  23264	   5ae0	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+03:17:57 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'motor_control':
+../Core/Src/main.c:106:7: warning: implicit declaration of function 'abs' [-Wimplicit-function-declaration]
+  106 |    if(abs(left_motor_speed)<0 || abs(left_motor_speed)>1){
+      |       ^~~
+../Core/Src/main.c:106:11: warning: 'abs' argument 1 type is 'double' where 'int' is expected in a call to built-in function declared without prototype [-Wbuiltin-declaration-mismatch]
+  106 |    if(abs(left_motor_speed)<0 || abs(left_motor_speed)>1){
+      |           ^~~~~~~~~~~~~~~~
+<built-in>: note: built-in 'abs' declared here
+../Core/Src/main.c:106:38: warning: 'abs' argument 1 type is 'double' where 'int' is expected in a call to built-in function declared without prototype [-Wbuiltin-declaration-mismatch]
+  106 |    if(abs(left_motor_speed)<0 || abs(left_motor_speed)>1){
+      |                                      ^~~~~~~~~~~~~~~~
+<built-in>: note: built-in 'abs' declared here
+../Core/Src/main.c:110:11: warning: 'abs' argument 1 type is 'double' where 'int' is expected in a call to built-in function declared without prototype [-Wbuiltin-declaration-mismatch]
+  110 |    if(abs(right_motor_speed)<0 || abs(right_motor_speed)>1){
+      |           ^~~~~~~~~~~~~~~~~
+<built-in>: note: built-in 'abs' declared here
+../Core/Src/main.c:110:39: warning: 'abs' argument 1 type is 'double' where 'int' is expected in a call to built-in function declared without prototype [-Wbuiltin-declaration-mismatch]
+  110 |    if(abs(right_motor_speed)<0 || abs(right_motor_speed)>1){
+      |                                       ^~~~~~~~~~~~~~~~~
+<built-in>: note: built-in 'abs' declared here
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  21296	     20	   1948	  23264	   5ae0	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+03:19:04 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  21216	     20	   1948	  23184	   5a90	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+03:20:01 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'motor_control':
+../Core/Src/main.c:106:8: warning: implicit declaration of function 'abs' [-Wimplicit-function-declaration]
+  106 |    if((abs(left_motor_speed)<0) || (abs(left_motor_speed)>1)){
+      |        ^~~
+../Core/Src/main.c:106:12: warning: 'abs' argument 1 type is 'double' where 'int' is expected in a call to built-in function declared without prototype [-Wbuiltin-declaration-mismatch]
+  106 |    if((abs(left_motor_speed)<0) || (abs(left_motor_speed)>1)){
+      |            ^~~~~~~~~~~~~~~~
+<built-in>: note: built-in 'abs' declared here
+../Core/Src/main.c:106:41: warning: 'abs' argument 1 type is 'double' where 'int' is expected in a call to built-in function declared without prototype [-Wbuiltin-declaration-mismatch]
+  106 |    if((abs(left_motor_speed)<0) || (abs(left_motor_speed)>1)){
+      |                                         ^~~~~~~~~~~~~~~~
+<built-in>: note: built-in 'abs' declared here
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  21256	     20	   1948	  23224	   5ab8	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+03:22:01 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  21592	     20	   1948	  23560	   5c08	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+03:22:24 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  21588	     20	   1948	  23556	   5c04	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+03:23:23 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:124:18: error: invalid suffix "f" on integer constant
+  124 |    motor_control(1f, 1f);
+      |                  ^~
+../Core/Src/main.c:124:22: error: invalid suffix "f" on integer constant
+  124 |    motor_control(1f, 1f);
+      |                      ^~
+make: *** [Core/Src/subdir.mk:49: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+03:23:37 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  21588	     20	   1948	  23556	   5c04	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+03:24:58 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:105:8: warning: 'motor_control' defined but not used [-Wunused-function]
+  105 |   void motor_control(double left_motor_speed, double right_motor_speed) {
+      |        ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  20400	     20	   1948	  22368	   5760	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+03:26:54 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:105:8: warning: 'motor_control' defined but not used [-Wunused-function]
+  105 |   void motor_control(double left_motor_speed, double right_motor_speed) {
+      |        ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  20400	     20	   1948	  22368	   5760	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+03:27:06 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:105:8: warning: 'motor_control' defined but not used [-Wunused-function]
+  105 |   void motor_control(double left_motor_speed, double right_motor_speed) {
+      |        ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  20408	     20	   1948	  22376	   5768	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+03:27:34 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-size   ArmuroLeer.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20408	     20	   1948	  22376	   5768	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+03:28:16 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-size   ArmuroLeer.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20408	     20	   1948	  22376	   5768	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+03:28:41 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:105:8: warning: 'motor_control' defined but not used [-Wunused-function]
+  105 |   void motor_control(double left_motor_speed, double right_motor_speed) {
+      |        ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  20424	     20	   1948	  22392	   5778	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+03:35:29 **** Cleaning Selected Files of configuration Debug for project ArmuroLeer ****
+Info: Internal Builder is used for build
+Debug/Core/Src/main.o deleted.
+03:40:23 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:105:8: warning: 'motor_control' defined but not used [-Wunused-function]
+  105 |   void motor_control(double left_motor_speed, double right_motor_speed) {
+      |        ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  20368	     20	   1948	  22336	   5740	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+04:01:30 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:68:23: warning: passing argument 1 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+   68 |     HAL_ADC_Start_DMA(&hadc1, buffer, 6);
+      |                       ^~~~~~
+      |                       |
+      |                       ADC_HandleTypeDef ** {aka struct <anonymous> **}
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:277,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h:1753:62: note: expected 'ADC_HandleTypeDef *' {aka 'struct <anonymous> *'} but argument is of type 'ADC_HandleTypeDef **' {aka 'struct <anonymous> **'}
+ 1753 | HAL_StatusTypeDef       HAL_ADC_Start_DMA(ADC_HandleTypeDef *hadc, uint32_t *pData, uint32_t Length);
+      |                                           ~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:145:4: error: 'sConfig' undeclared (first use in this function)
+  145 |    sConfig.Channel = ADC_CHANNEL_5;
+      |    ^~~~~~~
+../Core/Src/main.c:145:4: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:157:4: error: 'variable' undeclared (first use in this function)
+  157 |    variable = left;
+      |    ^~~~~~~~
+../Core/Src/main.c:158:4: error: 'len' undeclared (first use in this function)
+  158 |    len  =  sprintf((char*)string_buf, "left: %d\n", i, variable);
+      |    ^~~
+../Core/Src/main.c:158:27: error: 'string_buf' undeclared (first use in this function)
+  158 |    len  =  sprintf((char*)string_buf, "left: %d\n", i, variable);
+      |                           ^~~~~~~~~~
+../Core/Src/main.c:158:53: error: 'i' undeclared (first use in this function)
+  158 |    len  =  sprintf((char*)string_buf, "left: %d\n", i, variable);
+      |                                                     ^
+At top level:
+../Core/Src/main.c:114:8: warning: 'motor_control' defined but not used [-Wunused-function]
+  114 |   void motor_control(double left_motor_speed, double right_motor_speed) {
+      |        ^~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:49: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+04:02:40 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:68:23: warning: passing argument 1 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+   68 |     HAL_ADC_Start_DMA(&hadc1, buffer, 6);
+      |                       ^~~~~~
+      |                       |
+      |                       ADC_HandleTypeDef ** {aka struct <anonymous> **}
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:277,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h:1753:62: note: expected 'ADC_HandleTypeDef *' {aka 'struct <anonymous> *'} but argument is of type 'ADC_HandleTypeDef **' {aka 'struct <anonymous> **'}
+ 1753 | HAL_StatusTypeDef       HAL_ADC_Start_DMA(ADC_HandleTypeDef *hadc, uint32_t *pData, uint32_t Length);
+      |                                           ~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:146:4: error: 'sConfig' undeclared (first use in this function)
+  146 |    sConfig.Channel = ADC_CHANNEL_5;
+      |    ^~~~~~~
+../Core/Src/main.c:146:4: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:158:4: error: 'variable' undeclared (first use in this function)
+  158 |    variable = left;
+      |    ^~~~~~~~
+../Core/Src/main.c:159:4: error: 'len' undeclared (first use in this function)
+  159 |    len  =  sprintf((char*)string_buf, "left: %d\n", i, variable);
+      |    ^~~
+../Core/Src/main.c:159:27: error: 'string_buf' undeclared (first use in this function)
+  159 |    len  =  sprintf((char*)string_buf, "left: %d\n", i, variable);
+      |                           ^~~~~~~~~~
+../Core/Src/main.c:159:53: error: 'i' undeclared (first use in this function)
+  159 |    len  =  sprintf((char*)string_buf, "left: %d\n", i, variable);
+      |                                                     ^
+At top level:
+../Core/Src/main.c:114:8: warning: 'motor_control' defined but not used [-Wunused-function]
+  114 |   void motor_control(double left_motor_speed, double right_motor_speed) {
+      |        ^~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:49: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+04:04:13 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:68:23: warning: passing argument 1 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+   68 |     HAL_ADC_Start_DMA(&hadc1, buffer, 6);
+      |                       ^~~~~~
+      |                       |
+      |                       ADC_HandleTypeDef ** {aka struct <anonymous> **}
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:277,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h:1753:62: note: expected 'ADC_HandleTypeDef *' {aka 'struct <anonymous> *'} but argument is of type 'ADC_HandleTypeDef **' {aka 'struct <anonymous> **'}
+ 1753 | HAL_StatusTypeDef       HAL_ADC_Start_DMA(ADC_HandleTypeDef *hadc, uint32_t *pData, uint32_t Length);
+      |                                           ~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:158:4: error: 'variable' undeclared (first use in this function)
+  158 |    variable = left;
+      |    ^~~~~~~~
+../Core/Src/main.c:158:4: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:159:4: error: 'len' undeclared (first use in this function)
+  159 |    len  =  sprintf((char*)string_buf, "left: %d\n", i, variable);
+      |    ^~~
+../Core/Src/main.c:159:27: error: 'string_buf' undeclared (first use in this function)
+  159 |    len  =  sprintf((char*)string_buf, "left: %d\n", i, variable);
+      |                           ^~~~~~~~~~
+../Core/Src/main.c:159:53: error: 'i' undeclared (first use in this function)
+  159 |    len  =  sprintf((char*)string_buf, "left: %d\n", i, variable);
+      |                                                     ^
+At top level:
+../Core/Src/main.c:114:8: warning: 'motor_control' defined but not used [-Wunused-function]
+  114 |   void motor_control(double left_motor_speed, double right_motor_speed) {
+      |        ^~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:49: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+04:04:36 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:68:23: warning: passing argument 1 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+   68 |     HAL_ADC_Start_DMA(&hadc1, buffer, 6);
+      |                       ^~~~~~
+      |                       |
+      |                       ADC_HandleTypeDef ** {aka struct <anonymous> **}
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:277,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h:1753:62: note: expected 'ADC_HandleTypeDef *' {aka 'struct <anonymous> *'} but argument is of type 'ADC_HandleTypeDef **' {aka 'struct <anonymous> **'}
+ 1753 | HAL_StatusTypeDef       HAL_ADC_Start_DMA(ADC_HandleTypeDef *hadc, uint32_t *pData, uint32_t Length);
+      |                                           ~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:159:4: error: 'len' undeclared (first use in this function)
+  159 |    len  =  sprintf((char*)string_buf, "left: %d\n", variable);
+      |    ^~~
+../Core/Src/main.c:159:4: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:159:27: error: 'string_buf' undeclared (first use in this function)
+  159 |    len  =  sprintf((char*)string_buf, "left: %d\n", variable);
+      |                           ^~~~~~~~~~
+At top level:
+../Core/Src/main.c:114:8: warning: 'motor_control' defined but not used [-Wunused-function]
+  114 |   void motor_control(double left_motor_speed, double right_motor_speed) {
+      |        ^~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:49: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+04:05:01 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:68:23: warning: passing argument 1 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+   68 |     HAL_ADC_Start_DMA(&hadc1, buffer, 6);
+      |                       ^~~~~~
+      |                       |
+      |                       ADC_HandleTypeDef ** {aka struct <anonymous> **}
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:277,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h:1753:62: note: expected 'ADC_HandleTypeDef *' {aka 'struct <anonymous> *'} but argument is of type 'ADC_HandleTypeDef **' {aka 'struct <anonymous> **'}
+ 1753 | HAL_StatusTypeDef       HAL_ADC_Start_DMA(ADC_HandleTypeDef *hadc, uint32_t *pData, uint32_t Length);
+      |                                           ~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:160:4: error: 'len' undeclared (first use in this function)
+  160 |    len  =  sprintf((char*)string_buf, "left: %d\n", variable);
+      |    ^~~
+../Core/Src/main.c:160:4: note: each undeclared identifier is reported only once for each function it appears in
+At top level:
+../Core/Src/main.c:114:8: warning: 'motor_control' defined but not used [-Wunused-function]
+  114 |   void motor_control(double left_motor_speed, double right_motor_speed) {
+      |        ^~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:49: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+04:05:29 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:68:23: warning: passing argument 1 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+   68 |     HAL_ADC_Start_DMA(&hadc1, buffer, 6);
+      |                       ^~~~~~
+      |                       |
+      |                       ADC_HandleTypeDef ** {aka struct <anonymous> **}
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:277,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h:1753:62: note: expected 'ADC_HandleTypeDef *' {aka 'struct <anonymous> *'} but argument is of type 'ADC_HandleTypeDef **' {aka 'struct <anonymous> **'}
+ 1753 | HAL_StatusTypeDef       HAL_ADC_Start_DMA(ADC_HandleTypeDef *hadc, uint32_t *pData, uint32_t Length);
+      |                                           ~~~~~~~~~~~~~~~~~~~^~~~
+At top level:
+../Core/Src/main.c:114:8: warning: 'motor_control' defined but not used [-Wunused-function]
+  114 |   void motor_control(double left_motor_speed, double right_motor_speed) {
+      |        ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  24104	    120	   1976	  26200	   6658	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+04:05:59 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-size   ArmuroLeer.elf 
+   text	   data	    bss	    dec	    hex	filename
+  24104	    120	   1976	  26200	   6658	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+04:08:10 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-size   ArmuroLeer.elf 
+   text	   data	    bss	    dec	    hex	filename
+  24104	    120	   1976	  26200	   6658	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+04:17:42 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:68:23: warning: passing argument 1 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+   68 |     HAL_ADC_Start_DMA(&hadc1, buffer, 6);
+      |                       ^~~~~~
+      |                       |
+      |                       ADC_HandleTypeDef ** {aka struct <anonymous> **}
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:277,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h:1753:62: note: expected 'ADC_HandleTypeDef *' {aka 'struct <anonymous> *'} but argument is of type 'ADC_HandleTypeDef **' {aka 'struct <anonymous> **'}
+ 1753 | HAL_StatusTypeDef       HAL_ADC_Start_DMA(ADC_HandleTypeDef *hadc, uint32_t *pData, uint32_t Length);
+      |                                           ~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:148:24: error: request for member 'length' in something not a structure or union
+  148 |      for(int i; i < adc.length; i++){
+      |                        ^
+At top level:
+../Core/Src/main.c:114:8: warning: 'motor_control' defined but not used [-Wunused-function]
+  114 |   void motor_control(double left_motor_speed, double right_motor_speed) {
+      |        ^~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:49: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+04:18:19 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:68:23: warning: passing argument 1 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+   68 |     HAL_ADC_Start_DMA(&hadc1, buffer, 6);
+      |                       ^~~~~~
+      |                       |
+      |                       ADC_HandleTypeDef ** {aka struct <anonymous> **}
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:277,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h:1753:62: note: expected 'ADC_HandleTypeDef *' {aka 'struct <anonymous> *'} but argument is of type 'ADC_HandleTypeDef **' {aka 'struct <anonymous> **'}
+ 1753 | HAL_StatusTypeDef       HAL_ADC_Start_DMA(ADC_HandleTypeDef *hadc, uint32_t *pData, uint32_t Length);
+      |                                           ~~~~~~~~~~~~~~~~~~~^~~~
+At top level:
+../Core/Src/main.c:114:8: warning: 'motor_control' defined but not used [-Wunused-function]
+  114 |   void motor_control(double left_motor_speed, double right_motor_speed) {
+      |        ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  23228	    120	   2024	  25372	   631c	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
+04:19:29 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:68:23: warning: passing argument 1 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+   68 |     HAL_ADC_Start_DMA(&hadc1, buffer, 6);
+      |                       ^~~~~~
+      |                       |
+      |                       ADC_HandleTypeDef ** {aka struct <anonymous> **}
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:277,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h:1753:62: note: expected 'ADC_HandleTypeDef *' {aka 'struct <anonymous> *'} but argument is of type 'ADC_HandleTypeDef **' {aka 'struct <anonymous> **'}
+ 1753 | HAL_StatusTypeDef       HAL_ADC_Start_DMA(ADC_HandleTypeDef *hadc, uint32_t *pData, uint32_t Length);
+      |                                           ~~~~~~~~~~~~~~~~~~~^~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:148:24: error: request for member 'length' in something not a structure or union
+  148 |      for(int i; i < adc.length; i++){
+      |                        ^
+../Core/Src/main.c:154:8: error: redeclaration of 'variable' with no linkage
+  154 |    int variable = left;
+      |        ^~~~~~~~
+../Core/Src/main.c:146:10: note: previous declaration of 'variable' was here
+  146 |      int variable;
+      |          ^~~~~~~~
+../Core/Src/main.c:154:19: error: 'left' undeclared (first use in this function)
+  154 |    int variable = left;
+      |                   ^~~~
+../Core/Src/main.c:154:19: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:154:8: warning: unused variable 'variable' [-Wunused-variable]
+  154 |    int variable = left;
+      |        ^~~~~~~~
+At top level:
+../Core/Src/main.c:114:8: warning: 'motor_control' defined but not used [-Wunused-function]
+  114 |   void motor_control(double left_motor_speed, double right_motor_speed) {
+      |        ^~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:49: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+04:20:21 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:68:23: warning: passing argument 1 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+   68 |     HAL_ADC_Start_DMA(&hadc1, buffer, 6);
+      |                       ^~~~~~
+      |                       |
+      |                       ADC_HandleTypeDef ** {aka struct <anonymous> **}
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:277,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h:1753:62: note: expected 'ADC_HandleTypeDef *' {aka 'struct <anonymous> *'} but argument is of type 'ADC_HandleTypeDef **' {aka 'struct <anonymous> **'}
+ 1753 | HAL_StatusTypeDef       HAL_ADC_Start_DMA(ADC_HandleTypeDef *hadc, uint32_t *pData, uint32_t Length);
+      |                                           ~~~~~~~~~~~~~~~~~~~^~~~
+At top level:
+../Core/Src/main.c:114:8: warning: 'motor_control' defined but not used [-Wunused-function]
+  114 |   void motor_control(double left_motor_speed, double right_motor_speed) {
+      |        ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
+arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
+   text	   data	    bss	    dec	    hex	filename
+  23712	    120	   1976	  25808	   64d0	ArmuroLeer.elf
+Finished building: default.size.stdout
+ 
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
