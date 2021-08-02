@@ -1,3 +1,4 @@
 ticksLeft
 ticksRight
 buffer
+HAL_GetTick()

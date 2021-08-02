@@ -1,1 +1,6 @@
 hterm.exe
+
+.metadata/
+/.metadata
+
+SelbstTestBinary.bin

@@ -1,10 +1,92 @@
-18:39:43 **** Incremental Build of configuration Debug for project ArmuroLeer ****
+18:46:17 **** Incremental Build of configuration Debug for project ArmuroLeer ****
 make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:89:2: warning: implicit declaration of function 'writeSensorUSB' [-Wimplicit-function-declaration]
+   89 |  writeSensorUSB();
+      |  ^~~~~~~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:93:6: warning: conflicting types for 'writeSensorUSB'
+   93 | void writeSensorUSB() {
+      |      ^~~~~~~~~~~~~~
+../Core/Src/main.c:89:2: note: previous implicit declaration of 'writeSensorUSB' was here
+   89 |  writeSensorUSB();
+      |  ^~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'writeSensorUSB':
+../Core/Src/main.c:95:46: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   95 |  uint8_t len = sprintf((char*) string_buf, "%d, %d, %d, %d, %d, %d\n",
+      |                                             ~^
+      |                                              |
+      |                                              int
+      |                                             %ld
+   96 |    buffer[0], buffer[1], buffer[2], buffer[3], buffer[4], buffer[5]);
+      |    ~~~~~~~~~                                  
+      |          |
+      |          uint32_t {aka long unsigned int}
+../Core/Src/main.c:95:50: warning: format '%d' expects argument of type 'int', but argument 4 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   95 |  uint8_t len = sprintf((char*) string_buf, "%d, %d, %d, %d, %d, %d\n",
+      |                                                 ~^
+      |                                                  |
+      |                                                  int
+      |                                                 %ld
+   96 |    buffer[0], buffer[1], buffer[2], buffer[3], buffer[4], buffer[5]);
+      |               ~~~~~~~~~                           
+      |                     |
+      |                     uint32_t {aka long unsigned int}
+../Core/Src/main.c:95:54: warning: format '%d' expects argument of type 'int', but argument 5 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   95 |  uint8_t len = sprintf((char*) string_buf, "%d, %d, %d, %d, %d, %d\n",
+      |                                                     ~^
+      |                                                      |
+      |                                                      int
+      |                                                     %ld
+   96 |    buffer[0], buffer[1], buffer[2], buffer[3], buffer[4], buffer[5]);
+      |                          ~~~~~~~~~                    
+      |                                |
+      |                                uint32_t {aka long unsigned int}
+../Core/Src/main.c:95:58: warning: format '%d' expects argument of type 'int', but argument 6 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   95 |  uint8_t len = sprintf((char*) string_buf, "%d, %d, %d, %d, %d, %d\n",
+      |                                                         ~^
+      |                                                          |
+      |                                                          int
+      |                                                         %ld
+   96 |    buffer[0], buffer[1], buffer[2], buffer[3], buffer[4], buffer[5]);
+      |                                     ~~~~~~~~~             
+      |                                           |
+      |                                           uint32_t {aka long unsigned int}
+../Core/Src/main.c:95:62: warning: format '%d' expects argument of type 'int', but argument 7 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   95 |  uint8_t len = sprintf((char*) string_buf, "%d, %d, %d, %d, %d, %d\n",
+      |                                                             ~^
+      |                                                              |
+      |                                                              int
+      |                                                             %ld
+   96 |    buffer[0], buffer[1], buffer[2], buffer[3], buffer[4], buffer[5]);
+      |                                                ~~~~~~~~~      
+      |                                                      |
+      |                                                      uint32_t {aka long unsigned int}
+../Core/Src/main.c:95:66: warning: format '%d' expects argument of type 'int', but argument 8 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   95 |  uint8_t len = sprintf((char*) string_buf, "%d, %d, %d, %d, %d, %d\n",
+      |                                                                 ~^
+      |                                                                  |
+      |                                                                  int
+      |                                                                 %ld
+   96 |    buffer[0], buffer[1], buffer[2], buffer[3], buffer[4], buffer[5]);
+      |                                                           ~~~~~~~~~
+      |                                                                 |
+      |                                                                 uint32_t {aka long unsigned int}
+arm-none-eabi-gcc -o "ArmuroLeer.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Pierre\Documents\edu\uni\robotics\ArmuroLeer\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ArmuroLeer.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ArmuroLeer.elf
+ 
 arm-none-eabi-size   ArmuroLeer.elf 
+arm-none-eabi-objdump -h -S  ArmuroLeer.elf  > "ArmuroLeer.list"
+arm-none-eabi-objcopy  -O binary  ArmuroLeer.elf  "ArmuroLeer.bin"
    text	   data	    bss	    dec	    hex	filename
-  26080	    120	   2040	  28240	   6e50	ArmuroLeer.elf
+  21788	     20	   1960	  23768	   5cd8	ArmuroLeer.elf
 Finished building: default.size.stdout
  
+Finished building: ArmuroLeer.bin
+ 
+Finished building: ArmuroLeer.list
+ 
 
-18:39:43 Build Finished. 0 errors, 0 warnings. (took 361ms)
+18:46:18 Build Finished. 0 errors, 8 warnings. (took 1s.148ms)
 
