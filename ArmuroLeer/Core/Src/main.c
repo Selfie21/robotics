@@ -142,7 +142,7 @@ void taskLED() {
 
 // taking right encoder as as base (more accurate) so changing of speed happens to left motor
 void regulateMotor(){
-	if(notDriving){
+	if(!notDriving){
 		diff =  ticksRight - ticksLeft;
 		percentageDiff = 0;
 
