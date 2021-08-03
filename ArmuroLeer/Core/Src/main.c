@@ -1,22 +1,3 @@
-/* USER CODE BEGIN Header */
-/**
- ******************************************************************************
- * @file           : main.c
- * @brief          : Main program body
- ******************************************************************************
- * @attention
- *
- * <h2><center>&copy; Copyright (c) 2021 STMicroelectronics.
- * All rights reserved.</center></h2>
- *
- * This software component is licensed by ST under BSD 3-Clause license,
- * the "License"; You may not use this file except in compliance with the
- * License. You may obtain a copy of the License at:
- *                        opensource.org/licenses/BSD-3-Clause
- *
- ******************************************************************************
- */
-/* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "adc.h"
@@ -41,43 +22,53 @@ volatile uint32_t adc[6];
 uint32_t buffer[6];
 
 const uint32_t HIGH_THRESHOLD = 2000;
-const uint32_t LOW_THRESHOLD = 600;
+const uint32_t LOW_THRESHOLD = 900;
 bool encoderStatusRight;
 bool encoderStatusLeft;
 uint32_t ticksLeft;
 uint32_t ticksRight;
 
-enum LED_STATE { eStateA, eStateB};
-enum LED_STATE taskLED_state = eStateA;
+const uint32_t TRIGGER_PER_CM = 2;
+const uint32_t TRIGGER_PER_TENDEGREE = 7;
+
+
+const uint8_t KP = 2;
+double percentageDiff;
+uint32_t diff;
+
+enum LED_STATE {stateA, stateB};
+enum LED_STATE taskLedState = stateA;
 unsigned long long waitingSince = 0;
+
+enum DRIVE_ROUTINE_STATE {start, firstStraight, firstTurn, secondStraight, secondTurn, thirdStraight};
+enum DRIVE_ROUTINE_STATE driveRoutineStart = start;
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
-/* USER CODE BEGIN 0 */
-void motor_control(double left_motor_speed, double right_motor_speed) {
-	if (left_motor_speed > 0) {
+void controlMotor(double leftMotorSpeed, double rightMotorSpeed) {
+	if (leftMotorSpeed > 0) {
 		HAL_GPIO_WritePin(GPIOA, phase2_L_Pin, GPIO_PIN_RESET);
-	} else if (left_motor_speed < 0) {
+	} else if (leftMotorSpeed < 0) {
 		HAL_GPIO_WritePin(GPIOA, phase2_L_Pin, GPIO_PIN_SET);
 	}
-	if (right_motor_speed > 0) {
+	if (rightMotorSpeed > 0) {
 		HAL_GPIO_WritePin(GPIOB, phase2_R_Pin, GPIO_PIN_SET);
-	} else if (right_motor_speed < 0) {
+	} else if (rightMotorSpeed < 0) {
 		HAL_GPIO_WritePin(GPIOB, phase2_R_Pin, GPIO_PIN_RESET);
 	}
 
-	if (left_motor_speed < -1 || left_motor_speed > 1) {
-		left_motor_speed = 0.5f;
+	if (leftMotorSpeed < -1 || leftMotorSpeed > 1) {
+		leftMotorSpeed = 0.5f;
 	}
 
-	if (right_motor_speed < -1 || right_motor_speed > 1) {
-		right_motor_speed = 0.5f;
+	if (rightMotorSpeed < -1 || rightMotorSpeed > 1) {
+		rightMotorSpeed = 0.5f;
 	}
 
-	TIM1->CCR2 = (int) (left_motor_speed * 65536);
-	TIM1->CCR3 = (int) (right_motor_speed * 65536);
+	TIM1->CCR2 = (int) (leftMotorSpeed * 65535);
+	TIM1->CCR3 = (int) ((1 - rightMotorSpeed) * 65535);
 }
 
 
@@ -91,26 +82,26 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *hadc1) {
 
 
 void writeSensorUSB() {
-	char string_buf[100];
-	uint8_t len = sprintf((char*) string_buf, "%d, %d, %d, %d, %d, %d\n",
-			buffer[0], buffer[1], buffer[2], buffer[3], buffer[4], buffer[5]);
-	HAL_UART_Transmit(&huart2, (uint8_t*) string_buf, len, 1000000);
+	char stringBuf[100];
+	int len = sprintf((char*) stringBuf, "%d, %d, %d, %d, %d, %d\n",
+			adc[0], adc[1], adc[2], adc[3], adc[4], adc[5]);
+	HAL_UART_Transmit(&huart2, (uint8_t*) stringBuf, len, 1000000);
 }
 
 
 void evaluateEncoder(){
-	if(buffer[1] > HIGH_THRESHOLD && !encoderStatusLeft){
+	if(adc[1] > HIGH_THRESHOLD && !encoderStatusLeft){
 		ticksLeft++;
 		encoderStatusLeft = true;
-	}else if(buffer[1] < LOW_THRESHOLD && encoderStatusLeft){
+	}else if(adc[1] < LOW_THRESHOLD && encoderStatusLeft){
 		ticksLeft++;
 		encoderStatusLeft = false;
 	}
 
-	if(buffer[4] > HIGH_THRESHOLD && !encoderStatusRight){
+	if(adc[4] > HIGH_THRESHOLD && !encoderStatusRight){
 		ticksRight++;
 		encoderStatusRight = true;
-	}else if(buffer[4] < LOW_THRESHOLD && encoderStatusRight){
+	}else if(adc[4] < LOW_THRESHOLD && encoderStatusRight){
 		ticksRight++;
 		encoderStatusRight = false;
 	}
@@ -119,20 +110,99 @@ void evaluateEncoder(){
 
 void taskLED() {
 
-	switch(taskLED_state) {
-	case eStateA:
+	switch(taskLedState) {
+	case stateA:
 		if(HAL_GetTick() > (waitingSince + 500)){
 			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, GPIO_PIN_SET);
 			waitingSince = HAL_GetTick();
-			taskLED_state = eStateB;
+			taskLedState = stateB;
 		}
 		break;
 
-	case eStateB:
+	case stateB:
 		if(HAL_GetTick() > (waitingSince + 500)){
 			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, GPIO_PIN_RESET);
 			waitingSince = HAL_GetTick();
-			taskLED_state = eStateA;
+			taskLedState = stateA;
+		}
+		break;
+	}
+}
+
+
+
+// taking right encoder as as base (more accurate) so changing of speed happens to left motor
+void regulateMotor(){
+	diff =  ticksRight - ticksLeft;
+	percentageDiff = 0;
+
+	if(ticksLeft != 0){
+		percentageDiff = (double) diff/ticksLeft;
+	}else{
+		diff = 0;
+	}
+
+	double currentSpeedLeft = (double) (TIM1->CCR2)/65536;
+	double currentSpeedRight = (double) (TIM1->CCR3)/65536;
+	if(diff > 0){
+		controlMotor(currentSpeedLeft+(KP * percentageDiff), currentSpeedRight);
+	}else if(diff < 0){
+		controlMotor(currentSpeedLeft-(KP *percentageDiff), currentSpeedRight);
+	}
+}
+
+uint32_t triggerSinceChange = 0;
+uint32_t distanceToCover = 0;
+void driveTestDemo(){
+
+	switch(driveRoutineStart) {
+
+	case start:
+		driveRoutineStart = firstStraight;
+		controlMotor(0.5f, 0.5f);
+		triggerSinceChange = ticksRight;
+		distanceToCover = 47 * TRIGGER_PER_CM;
+		break;
+
+	case firstStraight:
+		if(ticksRight > (triggerSinceChange + distanceToCover)){
+			driveRoutineStart = firstTurn;
+			controlMotor(0.5f, -0.5f);
+			distanceToCover = 3 * TRIGGER_PER_TENDEGREE;
+			triggerSinceChange = ticksRight;
+		}
+		break;
+
+	case firstTurn:
+		if(ticksRight > (triggerSinceChange + distanceToCover)){
+			driveRoutineStart = secondStraight;
+			controlMotor(0.5f, 0.5f);
+			distanceToCover = (uint32_t) 35.5f * TRIGGER_PER_CM;
+			triggerSinceChange = ticksRight;
+		}
+		break;
+
+	case secondStraight:
+		if(ticksRight > (triggerSinceChange + distanceToCover)){
+			driveRoutineStart = secondTurn;
+			controlMotor(-0.5f, 0.5f);
+			distanceToCover = 9 * TRIGGER_PER_TENDEGREE;
+			triggerSinceChange = ticksRight;
+		}
+		break;
+
+	case secondTurn:
+		if(ticksRight > (triggerSinceChange + distanceToCover)){
+			driveRoutineStart = thirdStraight;
+			controlMotor(0.5f, 0.5f);
+			distanceToCover = 16 * TRIGGER_PER_CM;
+			triggerSinceChange = ticksRight;
+		}
+		break;
+
+	case thirdStraight:
+		if(ticksRight > (triggerSinceChange + distanceToCover)){
+			controlMotor(0.0f, 0.0f);
 		}
 		break;
 	}
@@ -146,7 +216,6 @@ int main(void)
 {
 
 	/* MCU Configuration--------------------------------------------------------*/
-
 	/* Reset of all peripherals, Initializes the Flash interface and the Systick. */
 	HAL_Init();
 
@@ -159,17 +228,20 @@ int main(void)
 	MX_USART2_UART_Init();
 	MX_ADC1_Init();
 	MX_TIM1_Init();
-	//HAL_TIM_Base_Start(&htim1);
 	HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_2);
 	HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_3);
 
 	TIM1->CCR2 = 0;
 	TIM1->CCR3 = 30000;
-	motor_control(0.5f, 0.5f);
-
+	ticksLeft = 0;
+	ticksRight = 0;
+	controlMotor(0.5f, 0.5f);
 	while (1) {
+		HAL_ADC_Start_DMA(&hadc1, buffer, 6);
 		taskLED();
-
+		evaluateEncoder();
+		regulateMotor();
+		HAL_Delay(20);
 	}
 }
 
@@ -275,5 +347,3 @@ void assert_failed(uint8_t *file, uint32_t line)
 	/* USER CODE END 6 */
 }
 #endif /* USE_FULL_ASSERT */
-
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
