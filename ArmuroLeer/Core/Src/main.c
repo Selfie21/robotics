@@ -29,12 +29,14 @@ uint32_t ticksLeft;
 uint32_t ticksRight;
 
 const uint32_t TRIGGER_PER_CM = 2;
-const uint32_t TRIGGER_PER_TENDEGREE = 7;
+const double TRIGGER_PER_DEGREE_RIGHT = 0.635;
+const double TRIGGER_PER_DEGREE_LEFT = 0.13;
 
 
-const uint8_t KP = 2;
+const uint8_t KP = 1;
 double percentageDiff;
 uint32_t diff;
+bool notDriving = true;
 
 enum LED_STATE {stateA, stateB};
 enum LED_STATE taskLedState = stateA;
@@ -48,6 +50,13 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 void controlMotor(double leftMotorSpeed, double rightMotorSpeed) {
+
+	if((leftMotorSpeed == 0.0f) || (rightMotorSpeed == 0.0f)){
+		notDriving = true;
+	}else{
+		notDriving = false;
+	}
+
 	if (leftMotorSpeed > 0) {
 		HAL_GPIO_WritePin(GPIOA, phase2_L_Pin, GPIO_PIN_RESET);
 	} else if (leftMotorSpeed < 0) {
@@ -133,21 +142,23 @@ void taskLED() {
 
 // taking right encoder as as base (more accurate) so changing of speed happens to left motor
 void regulateMotor(){
-	diff =  ticksRight - ticksLeft;
-	percentageDiff = 0;
+	if(notDriving){
+		diff =  ticksRight - ticksLeft;
+		percentageDiff = 0;
 
-	if(ticksLeft != 0){
-		percentageDiff = (double) diff/ticksLeft;
-	}else{
-		diff = 0;
-	}
+		if(ticksLeft != 0){
+			percentageDiff = (double) diff/ticksLeft;
+		}else{
+			diff = 0;
+		}
 
-	double currentSpeedLeft = (double) (TIM1->CCR2)/65536;
-	double currentSpeedRight = (double) (TIM1->CCR3)/65536;
-	if(diff > 0){
-		controlMotor(currentSpeedLeft+(KP * percentageDiff), currentSpeedRight);
-	}else if(diff < 0){
-		controlMotor(currentSpeedLeft-(KP *percentageDiff), currentSpeedRight);
+		double currentSpeedLeft = (double) (TIM1->CCR2)/65536;
+		double currentSpeedRight = (double) (TIM1->CCR3)/65536;
+		if(diff > 0){
+			controlMotor(currentSpeedLeft+(KP * percentageDiff), currentSpeedRight);
+		}else if(diff < 0){
+			controlMotor(currentSpeedLeft-(KP *percentageDiff), currentSpeedRight);
+		}
 	}
 }
 
@@ -168,7 +179,7 @@ void driveTestDemo(){
 		if(ticksRight > (triggerSinceChange + distanceToCover)){
 			driveRoutineStart = firstTurn;
 			controlMotor(0.5f, -0.5f);
-			distanceToCover = 3 * TRIGGER_PER_TENDEGREE;
+			distanceToCover = (uint32_t) (30 * TRIGGER_PER_DEGREE_RIGHT);
 			triggerSinceChange = ticksRight;
 		}
 		break;
@@ -186,7 +197,7 @@ void driveTestDemo(){
 		if(ticksRight > (triggerSinceChange + distanceToCover)){
 			driveRoutineStart = secondTurn;
 			controlMotor(-0.5f, 0.5f);
-			distanceToCover = 9 * TRIGGER_PER_TENDEGREE;
+			distanceToCover = (uint32_t) (90 * TRIGGER_PER_DEGREE_LEFT);
 			triggerSinceChange = ticksRight;
 		}
 		break;
@@ -195,7 +206,7 @@ void driveTestDemo(){
 		if(ticksRight > (triggerSinceChange + distanceToCover)){
 			driveRoutineStart = thirdStraight;
 			controlMotor(0.5f, 0.5f);
-			distanceToCover = 16 * TRIGGER_PER_CM;
+			distanceToCover = 32 * TRIGGER_PER_CM;
 			triggerSinceChange = ticksRight;
 		}
 		break;
@@ -240,6 +251,7 @@ int main(void)
 		HAL_ADC_Start_DMA(&hadc1, buffer, 6);
 		taskLED();
 		evaluateEncoder();
+		driveTestDemo();
 		regulateMotor();
 		HAL_Delay(20);
 	}
