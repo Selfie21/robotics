@@ -1,0 +1,6 @@
+tasks.c:22:6:setDriveState	40	static
+tasks.c:32:6:task_followLine	8	static
+tasks.c:50:6:taskDriveTrajectory	8	static
+tasks.c:87:6:task_avoidObstacle	8	static
+tasks.c:135:6:task_searchLine	8	static
+tasks.c:171:6:blinkLED	8	static

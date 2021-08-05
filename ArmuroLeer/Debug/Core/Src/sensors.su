@@ -1,0 +1,3 @@
+sensors.c:18:6:evaluateEncoder	4	static
+sensors.c:36:6:writeSensorUSB	144	static
+sensors.c:43:6:HAL_ADC_ConvCpltCallback	24	static
