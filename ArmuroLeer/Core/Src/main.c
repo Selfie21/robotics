@@ -47,8 +47,10 @@ unsigned long long waitingSince = 0;
 
 enum DRIVE_ROUTINE_STATE {start, firstStraight, firstTurn, secondStraight, secondTurn, thirdStraight, thirdTurn};
 enum DRIVE_ROUTINE_STATE driveRoutineStart = start;
-
 enum DRIVE_ROUTINE_STATE obstacleState = start;
+
+enum SEARCH_LINE_STATE {noLine, searchRight, noLineRight, searchLeft, noLineLeft};
+enum SEARCH_LINE_STATE lineSearchState = searchRight;
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
@@ -85,6 +87,61 @@ void controlMotor(double leftMotorSpeed, double rightMotorSpeed) {
 	TIM1->CCR3 = (int) ((1 - rightMotorSpeed) * 65535);
 }
 
+uint32_t triggerSinceChange;
+uint32_t distanceToCover;
+void task_searchLine(){
+
+	// every cycle the main method checks if a line has been found with
+	// the normal line finding method
+	if(totalState == followLine){
+		return;
+	}
+
+	switch(lineSearchState){
+		case noLine:
+			driveRoutineStart = searchRight;
+			controlMotor(0.5f, -0.5f);
+			triggerSinceChange = ticksRight;
+			distanceToCover = (uint32_t) (90 * TRIGGER_PER_DEGREE_RIGHT);
+			break;
+
+		case searchRight:
+			if(ticksRight > (triggerSinceChange + distanceToCover)){
+				driveRoutineStart = noLineRight;
+				controlMotor(-0.5f, 0.5f);
+				distanceToCover = (uint32_t) (100 * TRIGGER_PER_DEGREE_LEFT);
+				triggerSinceChange = ticksRight;
+			}
+			break;
+
+		case noLineRight:
+			if(ticksRight > (triggerSinceChange + distanceToCover)){
+				driveRoutineStart = searchLeft;
+				controlMotor(-0.5f, 0.5f);
+				distanceToCover = (uint32_t) (100 * TRIGGER_PER_DEGREE_LEFT);
+				triggerSinceChange = ticksRight;
+			}
+			break;
+
+		case searchLeft:
+			if(ticksRight > (triggerSinceChange + distanceToCover)){
+				driveRoutineStart = noLineLeft;
+				controlMotor(0.5f, -0.5f);
+				triggerSinceChange = ticksRight;
+				distanceToCover = (uint32_t) (100 * TRIGGER_PER_DEGREE_RIGHT);
+			}
+			break;
+
+		case noLineLeft:
+			if(ticksRight > (triggerSinceChange + distanceToCover)){
+				// no line has been found -> go to gap state
+				totalState = overcomeGap;
+				controlMotor(0.0f, 0.0f);
+			}
+			break;
+	}
+
+}
 
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *hadc1) {
 	for (int i = 0; i < 6; i++) {
