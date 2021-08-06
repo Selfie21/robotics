@@ -13,9 +13,6 @@ const int8_t KP = 24;
 
 uint32_t ticksLeft;
 uint32_t ticksRight;
-float currentLeftSpeed;
-float currentRightSpeed;
-
 
 void setMotorSpeed(float leftMotorSpeed, float rightMotorSpeed) {
 
@@ -36,8 +33,6 @@ void setMotorSpeed(float leftMotorSpeed, float rightMotorSpeed) {
 		HAL_GPIO_WritePin(GPIOB, phase2_R_Pin, GPIO_PIN_RESET);
 	}
 
-	currentLeftSpeed = leftMotorSpeed;
-	currentRightSpeed = rightMotorSpeed;
 	leftMotorSpeed = (fabs(leftMotorSpeed) > 1) ? (leftMotorSpeed/leftMotorSpeed) : leftMotorSpeed;
 	rightMotorSpeed = (fabs(rightMotorSpeed) > 1) ? (rightMotorSpeed/rightMotorSpeed) : rightMotorSpeed;
 

@@ -46,3 +46,15 @@ bool lineDetected(uint32_t threshold){
 		return false;
 	}
 }
+
+
+bool objectDetected(){
+	GPIO_PinState left = HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_11);
+	GPIO_PinState middle = HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_9);
+	GPIO_PinState right = HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_8);
+	if((left == GPIO_PIN_RESET) || (middle == GPIO_PIN_RESET) || (right == GPIO_PIN_RESET)){
+		return true;
+	}else{
+		return false;
+	}
+}

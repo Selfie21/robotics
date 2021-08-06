@@ -22,9 +22,7 @@ uint32_t ticksRight;
 volatile uint32_t adc[6];
 uint32_t buffer[6];
 
-uint32_t triggerSinceChange;
-uint32_t distanceToCover;
-TASK_STATE robotState = FOLLOW_LINE;
+TASK_STATE robotState = FOLLOW_TRAJECTORY;
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
@@ -61,31 +59,35 @@ int main(void)
 	while (1) {
 		HAL_ADC_Start_DMA(&hadc1, buffer, 6);
 		evaluateEncoder();
-		blinkLED();
+		taskBlinkLED();
+
+		if(objectDetected()){
+			robotState = AVOID_OBSTACLE;
+		}
 
 		switch(robotState){
 			case FOLLOW_TRAJECTORY:
+				taskFollowTrajectory();
 				break;
 
 			case AVOID_OBSTACLE:
-				task_avoidObstacle();
+				taskAvoidObstacle();
 				break;
 
 			case FOLLOW_LINE:
-				task_followLine();
+				taskFollowLine();
 				break;
 
 			case OVERCOME_GAP:
 				break;
 
 			case SEARCH_LINE:
-				task_searchLine();
+				taskSearchLine();
 				if(lineDetected(2000)){
 					robotState = FOLLOW_LINE;
 				}
 				break;
 		}
-
 
 	}
 }

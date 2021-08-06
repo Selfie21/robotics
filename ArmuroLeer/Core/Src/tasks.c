@@ -29,7 +29,7 @@ void setDriveState(double leftMotorSpeed, double rightMotorSpeed, uint32_t newDi
 }
 
 
-void task_followLine() {
+void taskFollowLine() {
 
 	if (threewayLightComparator(1, 0, 1, WHITE_THRESHOLD)) {
 		setMotorSpeed(0.5f, 0.5f);
@@ -47,7 +47,7 @@ void task_followLine() {
 
 }
 
-void taskDriveTrajectory(){
+void taskFollowTrajectory(){
 
 	switch(routineState) {
 		case START:
@@ -70,27 +70,31 @@ void taskDriveTrajectory(){
 			break;
 
 		case TURN_B:
-			setDriveState(0.5f, 0.5f, 29 * TRIGGER_PER_CM, LINE_C);
-			break;
-
-		case LINE_C:
-			setDriveState(0.0f, 0.0f, 0, FINALE);
+			setDriveState(0.5f, 0.5f, 29 * TRIGGER_PER_CM, FINALE);
 			break;
 
 		case FINALE:
-			// set to FOllowLine TODO
+			if(ticksRight > (routinePersistent + distanceToCover)){
+				robotState = FOLLOW_LINE;
+				routineState = START;
+			}
+			break;
+
+		default:
+			robotState = FOLLOW_LINE;
+			routineState = START;
 			break;
 	}
 }
 
 
-void task_avoidObstacle(){
+void taskAvoidObstacle(){
 
 	switch(routineState) {
 
 		case START:
 			routineState = TURN_A;
-			setMotorSpeed(0.5f, -0.5f);
+			setMotorSpeed(-0.5f, 0.5f);
 			routinePersistent = ticksRight;
 			distanceToCover = (uint32_t) (90 * TRIGGER_PER_DEGREE_RIGHT);
 			break;
@@ -100,7 +104,7 @@ void task_avoidObstacle(){
 			break;
 
 		case LINE_A:
-			setDriveState(-0.5f, 0.5f, (uint32_t) (90 * TRIGGER_PER_DEGREE_LEFT), TURN_B);
+			setDriveState(0.5f, -0.5f, (uint32_t) (90 * TRIGGER_PER_DEGREE_LEFT), TURN_B);
 			break;
 
 		case TURN_B:
@@ -108,21 +112,18 @@ void task_avoidObstacle(){
 			break;
 
 		case LINE_B:
-			setDriveState(-0.5f, 0.5f, (uint32_t) (90 * TRIGGER_PER_DEGREE_LEFT), TURN_C);
+			setDriveState(0.5f, -0.5f, (uint32_t) (90 * TRIGGER_PER_DEGREE_LEFT), TURN_C);
 			break;
 
 		case TURN_C:
-			setDriveState(0.5f, 0.5f, (8 * TRIGGER_PER_CM), LINE_C);
-			break;
-
-		case LINE_C:
-			if(ticksRight > (routinePersistent + distanceToCover)){
-				routineState = FINALE;
-			}
+			setDriveState(0.5f, 0.5f, (8 * TRIGGER_PER_CM), FINALE);
 			break;
 
 		case FINALE:
-			//TOTAL STATE = SEARCH LINE TODO
+			if(ticksRight > (routinePersistent + distanceToCover)){
+				routineState = START;
+				robotState = FOLLOW_LINE;
+			}
 			break;
 	}
 
@@ -132,7 +133,7 @@ void task_avoidObstacle(){
 
 
 
-void task_searchLine(){
+void taskSearchLine(){
 
 	switch(routineState){
 		case START:
@@ -168,7 +169,7 @@ enum LED_STATE {LED_ON, LED_OFF};
 enum LED_STATE ledState = LED_ON;
 uint32_t ledPersistent = 0;
 
-void blinkLED() {
+void taskBlinkLED() {
 	switch (ledState) {
 		case LED_ON:
 			if (HAL_GetTick() > (ledPersistent + 500)) {
