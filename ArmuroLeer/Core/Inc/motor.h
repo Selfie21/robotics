@@ -1,6 +1,7 @@
 #ifndef INC_MOTOR_H_
 #define INC_MOTOR_H_
 
+#include <stdbool.h>
 #include "tasks.h"
 
 void setMotorSpeed(float leftMotorSpeed, float rightMotorSpeed);

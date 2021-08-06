@@ -1,2 +1,2 @@
-motor.c:17:6:setMotorSpeed	24	static
-motor.c:44:6:calibrateMotor	48	static
+motor.c:19:6:setMotorSpeed	24	static
+motor.c:43:6:calibrateMotor	16	static
