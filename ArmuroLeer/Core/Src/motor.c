@@ -12,8 +12,8 @@ uint32_t ticksLeft;
 uint32_t ticksRight;
 
 int32_t deviation;
-float percentageDeviation;
-const float KP = 0.05f;
+float pDeviation;
+const float KP = 0.1f;
 bool driving = true;
 
 void setMotorSpeed(float leftMotorSpeed, float rightMotorSpeed) {
@@ -46,8 +46,8 @@ void calibrateMotor() {
 		float oldSpeedRight = currentSpeedRight;
 
 		deviation =  ticksRight - ticksLeft;
-		percentageDeviation = deviation * KP;
-		setMotorSpeed(currentSpeedLeft + percentageDeviation, currentSpeedRight - percentageDeviation);
+		pDeviation = deviation * KP;
+		setMotorSpeed(currentSpeedLeft + pDeviation, currentSpeedRight - pDeviation);
 
 		// if we are calibrating we want to hover around the speed -> no changing of the fixed Speed
 		currentSpeedLeft = oldSpeedLeft;

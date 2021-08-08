@@ -1,6 +1,7 @@
-tasks.c:22:6:setDriveState	40	static
-tasks.c:32:6:taskFollowLine	8	static
-tasks.c:50:6:taskFollowTrajectory	8	static
-tasks.c:91:6:taskAvoidObstacle	8	static
-tasks.c:136:6:taskSearchLine	8	static
-tasks.c:172:6:taskBlinkLED	8	static
+tasks.c:26:6:setDriveState	40	static
+tasks.c:36:6:taskFollowLine	8	static
+tasks.c:54:6:taskFollowTrajectory	8	static
+tasks.c:90:6:taskAvoidObstacle	8	static
+tasks.c:138:6:taskSearchLine	8	static
+tasks.c:167:6:taskOvercomeGap	8	static
+tasks.c:179:6:taskBlinkLED	8	static

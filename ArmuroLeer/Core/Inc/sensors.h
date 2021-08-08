@@ -11,5 +11,6 @@ extern uint32_t buffer[6];
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *hadc1);
 void writeSensorUSB();
 void evaluateEncoder();
+bool objectDetected();
 
 #endif /* INC_SENSORS_H_ */

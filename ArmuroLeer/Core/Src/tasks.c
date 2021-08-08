@@ -12,12 +12,16 @@ uint32_t ticksLeft;
 
 const uint32_t WHITE_THRESHOLD = 2000;
 const uint32_t TRIGGER_PER_CM = 2;
-const double TRIGGER_PER_DEGREE_RIGHT = 0.14;
-const double TRIGGER_PER_DEGREE_LEFT = 0.13;
+const double TRIGGER_PER_DEGREE_RIGHT = 0.125;
+const double TRIGGER_PER_DEGREE_LEFT = 0.125;
 
 ROUTINE_STATE routineState = START;
 uint32_t routinePersistent = 0;
 uint32_t distanceToCover = 0;
+
+enum LED_STATE {LED_ON, LED_OFF};
+enum LED_STATE ledState = LED_ON;
+uint32_t ledPersistent = 0;
 
 void setDriveState(double leftMotorSpeed, double rightMotorSpeed, uint32_t newDistance, ROUTINE_STATE newState){
 	if(ticksRight > (routinePersistent + distanceToCover)){
@@ -30,6 +34,7 @@ void setDriveState(double leftMotorSpeed, double rightMotorSpeed, uint32_t newDi
 
 
 void taskFollowLine() {
+	routineState = START;
 
 	if (threewayLightComparator(1, 0, 1, WHITE_THRESHOLD)) {
 		setMotorSpeed(0.5f, 0.5f);
@@ -41,7 +46,6 @@ void taskFollowLine() {
 		setMotorSpeed(0.5f, -0.5f);
 	} else {
 		robotState = SEARCH_LINE;
-		routineState = START;
 		setMotorSpeed(0.5f, 0.5f);
 	}
 
@@ -79,11 +83,6 @@ void taskFollowTrajectory(){
 				routineState = START;
 			}
 			break;
-
-		default:
-			robotState = FOLLOW_LINE;
-			routineState = START;
-			break;
 	}
 }
 
@@ -93,26 +92,29 @@ void taskAvoidObstacle(){
 	switch(routineState) {
 
 		case START:
-			routineState = TURN_A;
-			setMotorSpeed(-0.5f, 0.5f);
+			routineState = LINE_C;
+			setMotorSpeed(-0.5f, -0.5f);
 			routinePersistent = ticksRight;
-			distanceToCover = (uint32_t) (90 * TRIGGER_PER_DEGREE_RIGHT);
+			distanceToCover = (8 * TRIGGER_PER_CM);
 			break;
+
+		case LINE_C:
+			setDriveState(0.5f, -0.5f, (uint32_t) (90 * TRIGGER_PER_DEGREE_RIGHT), TURN_A);
 
 		case TURN_A:
 			setDriveState(0.5f, 0.5f, (8 * TRIGGER_PER_CM), LINE_A);
 			break;
 
 		case LINE_A:
-			setDriveState(0.5f, -0.5f, (uint32_t) (90 * TRIGGER_PER_DEGREE_LEFT), TURN_B);
+			setDriveState(-0.5f, 0.5f, (uint32_t) (90 * TRIGGER_PER_DEGREE_LEFT), TURN_B);
 			break;
 
 		case TURN_B:
-			setDriveState(0.5f, 0.5f, (24 * TRIGGER_PER_CM), LINE_B);
+			setDriveState(0.5f, 0.5f, (30 * TRIGGER_PER_CM), LINE_B);
 			break;
 
 		case LINE_B:
-			setDriveState(0.5f, -0.5f, (uint32_t) (90 * TRIGGER_PER_DEGREE_LEFT), TURN_C);
+			setDriveState(-0.5f, 0.5f, (uint32_t) (90 * TRIGGER_PER_DEGREE_LEFT), TURN_C);
 			break;
 
 		case TURN_C:
@@ -148,15 +150,12 @@ void taskSearchLine(){
 			break;
 
 		case TURN_B:
-			setDriveState(0.5f, -0.5f, (uint32_t) (100 * TRIGGER_PER_DEGREE_RIGHT), TURN_C);
-			break;
-
-		case TURN_C:
-			setDriveState(0.5f, 0.5f, 5 * TRIGGER_PER_CM, FINALE);
+			setDriveState(0.5f, -0.5f, (uint32_t) (100 * TRIGGER_PER_DEGREE_RIGHT), FINALE);
 			break;
 
 		case FINALE:
 			if(ticksRight > (routinePersistent + distanceToCover)){
+				robotState = OVERCOME_GAP;
 				routineState = START;
 			}
 			break;
@@ -165,9 +164,17 @@ void taskSearchLine(){
 }
 
 
-enum LED_STATE {LED_ON, LED_OFF};
-enum LED_STATE ledState = LED_ON;
-uint32_t ledPersistent = 0;
+void taskOvercomeGap(){
+	if(routineState == START){
+		setMotorSpeed(0.5f, 0.5f);
+		routinePersistent = ticksRight;
+		distanceToCover = (uint32_t) (30 * TRIGGER_PER_CM);
+	}
+
+	if(ticksRight > (routinePersistent + distanceToCover)){
+		robotState = FOLLOW_LINE;
+	}
+}
 
 void taskBlinkLED() {
 	switch (ledState) {

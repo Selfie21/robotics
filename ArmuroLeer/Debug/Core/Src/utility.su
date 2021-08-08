@@ -1,3 +1,2 @@
 utility.c:7:6:threewayLightComparator	40	static
 utility.c:38:6:lineDetected	16	static
-utility.c:51:6:objectDetected	16	static

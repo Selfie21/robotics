@@ -55,13 +55,43 @@ int main(void)
 
 	TIM1->CCR2 = 0;
 	TIM1->CCR3 = 0;
-	setMotorSpeed(0.6f, 0.6f);
 
 	while (1) {
 		HAL_ADC_Start_DMA(&hadc1, buffer, 6);
 		evaluateEncoder();
-		calibrateMotor();
 		taskBlinkLED();
+		calibrateMotor();
+
+		if(objectDetected()){
+			robotState = AVOID_OBSTACLE;
+		}
+
+		switch(robotState){
+			case FOLLOW_TRAJECTORY:
+				taskFollowTrajectory();
+				break;
+
+			case AVOID_OBSTACLE:
+				taskAvoidObstacle();
+				break;
+
+			case FOLLOW_LINE:
+				taskFollowLine();
+				break;
+
+			case OVERCOME_GAP:
+				taskOvercomeGap();
+				break;
+
+			case SEARCH_LINE:
+				taskSearchLine();
+				if(lineDetected(2000)){
+					robotState = FOLLOW_LINE;
+				}
+				break;
+		}
+
+		HAL_Delay(20);
 
 
 	}
